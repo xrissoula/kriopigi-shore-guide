@@ -36,7 +36,7 @@ export const Route = createFileRoute("/conditions")({
       { property: "og:title", content: "The Sea Today — Kriopigi Shore Guide" },
       {
         property: "og:description",
-        content: "A live snapshot of the waters around Kriopigi, combining marine observations with natural history.",
+        content: "A live snapshot of the waters around Kriopigi, combining modeled marine conditions with natural history.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -100,14 +100,14 @@ function Conditions() {
       <PageHeader
         eyebrow="The Sea Today"
         title="The sea today"
-        lead="A live snapshot of the waters around Kriopigi, combining marine observations with natural history."
+        lead="A live snapshot of the waters around Kriopigi, combining modeled marine conditions with natural history."
       />
 
       <div className="px-5 max-w-4xl mx-auto">
         {/* Hero snapshot */}
         <div className="rounded-2xl bg-gradient-sea p-6 md:p-8 text-primary-foreground shadow-deep">
           <p className="text-[10px] uppercase tracking-[0.25em] opacity-80">
-            {t("Forecast issued")} {c.time ? new Date(c.time).toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" }) : "—"}
+            {t("Latest model conditions")} {c.time ? new Date(c.time).toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" }) : "—"}
           </p>
           <p className="font-serif text-5xl mt-2">
             {c.sst != null ? `${c.sst.toFixed(1)}°C` : "—"} <span className="text-2xl opacity-80">{t("sea surface")}</span>
@@ -131,7 +131,7 @@ function Conditions() {
               </div>
             )}
           </div>
-          <p className="mt-5 text-[11px] opacity-75">{t("Data source: POSEIDON · Hellenic Centre for Marine Research")}</p>
+          <p className="mt-5 text-[11px] opacity-75">{t("Data sources: Copernicus Marine + Open-Meteo")}</p>
         </div>
 
         {/* Naturalist note — centrepiece */}
@@ -290,7 +290,7 @@ function Conditions() {
         {/* Sources */}
         <section className="mt-12 mb-4 border-t border-border pt-6 text-xs text-muted-foreground leading-relaxed">
           <p>
-            {t("Marine conditions provided by the Hellenic Centre for Marine Research (HCMR) through the POSEIDON ocean observing and forecasting system.")}{" "}
+            {t("Marine conditions are derived from Copernicus Marine model data; atmospheric conditions are provided by Open-Meteo.")}{" "}
             <a href={data.source.url} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
               poseidon.hcmr.gr
             </a>

@@ -28,3 +28,6 @@ dist/
 # Local script backups
 *_before_*.py
 *_backup.py
+
+# Local manual backups
+backups/

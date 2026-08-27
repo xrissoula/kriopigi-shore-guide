@@ -1,17 +1,22 @@
 import { createServerFn } from "@tanstack/react-start";
 
 /**
- * Live marine conditions for Kriopigi Beach (eastern Kassandra, Toronean Gulf).
+ * Current marine conditions for Kriopigi Beach.
  *
- * The page is written against this single adapter so that the underlying
- * provider can be swapped for the POSEIDON (HCMR) operational forecast API
- * once endpoint credentials are available: keep the returned `SeaConditions`
- * shape and only replace the fetch below. Nothing here is ever synthesised —
- * missing fields are returned as `null` and hidden by the UI.
+ * Immediate marine conditions come from the Kriopigi data pipeline:
+ *   Copernicus Marine -> GitHub Actions -> kriopigi_conditions.json
+ *
+ * Atmospheric conditions come from Open-Meteo.
+ *
+ * The public-facing page consumes the normalized SeaConditions shape below,
+ * so providers can change later without rewriting the UI.
  */
 
-const LAT = 40.0067;
-const LON = 23.4342;
+const LAT = 40.046;
+const LON = 23.48;
+
+const CONDITIONS_URL =
+  "https://raw.githubusercontent.com/xrissoula/kriopigi-shore-guide/main/data-pipeline/kriopigi_conditions.json";
 
 export type SeaDay = {
   date: string;
@@ -39,59 +44,148 @@ export type SeaConditions = {
     sunrise: string | null;
     sunset: string | null;
   };
-  waterQuality: { salinity: number | null; chlorophyll: number | null };
+  waterQuality: {
+    salinity: number | null;
+    chlorophyll: number | null;
+  };
   days: SeaDay[];
 };
 
-const num = (v: unknown): number | null => (typeof v === "number" && Number.isFinite(v) ? v : null);
+const num = (v: unknown): number | null =>
+  typeof v === "number" && Number.isFinite(v) ? v : null;
 
-export const getSeaConditions = createServerFn({ method: "GET" }).handler(async (): Promise<SeaConditions> => {
-  const marineUrl =
-    `https://marine-api.open-meteo.com/v1/marine?latitude=${LAT}&longitude=${LON}` +
-    "&current=sea_surface_temperature,wave_height,wave_direction,ocean_current_velocity,ocean_current_direction" +
-    "&daily=wave_height_max,sea_surface_temperature_max&forecast_days=6&timezone=Europe%2FAthens";
-  const weatherUrl =
-    `https://api.open-meteo.com/v1/forecast?latitude=${LAT}&longitude=${LON}` +
-    "&current=temperature_2m,wind_speed_10m,wind_direction_10m,cloud_cover" +
-    "&daily=sunrise,sunset,wind_speed_10m_max,wind_direction_10m_dominant&forecast_days=6&timezone=Europe%2FAthens";
+export const getSeaConditions = createServerFn({ method: "GET" }).handler(
+  async (): Promise<SeaConditions> => {
+    /*
+     * Immediate conditions produced hourly by our GitHub Actions pipeline.
+     */
+    const conditionsRes = await fetch(CONDITIONS_URL, {
+      headers: { accept: "application/json" },
+      cache: "no-store",
+    });
 
-  const [marineRes, weatherRes] = await Promise.all([
-    fetch(marineUrl, { headers: { accept: "application/json" } }),
-    fetch(weatherUrl, { headers: { accept: "application/json" } }),
-  ]);
-  if (!marineRes.ok || !weatherRes.ok) throw new Error("Marine forecast unavailable");
+    if (!conditionsRes.ok) {
+      throw new Error("Current Kriopigi conditions unavailable");
+    }
 
-  const marine = (await marineRes.json()) as any;
-  const weather = (await weatherRes.json()) as any;
+    const live = (await conditionsRes.json()) as any;
 
-  const days: SeaDay[] = (weather?.daily?.time ?? []).map((date: string, i: number) => ({
-    date,
-    sst: num(marine?.daily?.sea_surface_temperature_max?.[i]),
-    waveHeight: num(marine?.daily?.wave_height_max?.[i]),
-    windSpeed: num(weather?.daily?.wind_speed_10m_max?.[i]),
-    windDirection: num(weather?.daily?.wind_direction_10m_dominant?.[i]),
-  }));
+    /*
+     * Open-Meteo remains useful for sunrise/sunset and the existing
+     * multi-day auxiliary cards. These values are not used to replace
+     * the Copernicus current marine conditions.
+     */
+    const weatherUrl =
+      `https://api.open-meteo.com/v1/forecast?latitude=${LAT}&longitude=${LON}` +
+      "&daily=sunrise,sunset,wind_speed_10m_max,wind_direction_10m_dominant" +
+      "&forecast_days=6&timezone=Europe%2FAthens";
 
-  return {
-    source: { name: "POSEIDON · Hellenic Centre for Marine Research", url: "https://poseidon.hcmr.gr/" },
-    issuedAt: marine?.current?.time ?? weather?.current?.time ?? null,
-    fetchedAt: new Date().toISOString(),
-    current: {
-      time: weather?.current?.time ?? null,
-      sst: num(marine?.current?.sea_surface_temperature),
-      waveHeight: num(marine?.current?.wave_height),
-      waveDirection: num(marine?.current?.wave_direction),
-      currentVelocity: num(marine?.current?.ocean_current_velocity),
-      currentDirection: num(marine?.current?.ocean_current_direction),
-      airTemp: num(weather?.current?.temperature_2m),
-      windSpeed: num(weather?.current?.wind_speed_10m),
-      windDirection: num(weather?.current?.wind_direction_10m),
-      cloudCover: num(weather?.current?.cloud_cover),
-      sunrise: weather?.daily?.sunrise?.[0] ?? null,
-      sunset: weather?.daily?.sunset?.[0] ?? null,
-    },
-    // Not exposed by the current forecast adapter; the UI hides null fields.
-    waterQuality: { salinity: null, chlorophyll: null },
-    days,
-  };
-});
+    const marineDailyUrl =
+      `https://marine-api.open-meteo.com/v1/marine?latitude=${LAT}&longitude=${LON}` +
+      "&daily=wave_height_max,sea_surface_temperature_max" +
+      "&forecast_days=6&timezone=Europe%2FAthens";
+
+    const [weatherRes, marineDailyRes] = await Promise.all([
+      fetch(weatherUrl, {
+        headers: { accept: "application/json" },
+        cache: "no-store",
+      }),
+      fetch(marineDailyUrl, {
+        headers: { accept: "application/json" },
+        cache: "no-store",
+      }),
+    ]);
+
+    const weather = weatherRes.ok ? ((await weatherRes.json()) as any) : null;
+    const marineDaily = marineDailyRes.ok
+      ? ((await marineDailyRes.json()) as any)
+      : null;
+
+    const days: SeaDay[] = (weather?.daily?.time ?? []).map(
+      (date: string, i: number) => ({
+        date,
+        sst: num(marineDaily?.daily?.sea_surface_temperature_max?.[i]),
+        waveHeight: num(marineDaily?.daily?.wave_height_max?.[i]),
+
+        // Open-Meteo wind values are km/h by default, which is exactly
+        // what the existing sea-narrative helpers expect.
+        windSpeed: num(weather?.daily?.wind_speed_10m_max?.[i]),
+        windDirection: num(
+          weather?.daily?.wind_direction_10m_dominant?.[i],
+        ),
+      }),
+    );
+
+    const currentSpeedMs = num(live?.marine?.current?.speed_m_s);
+    const windSpeedMs = num(live?.weather?.wind?.speed_m_s);
+
+    /*
+     * Existing Conditions UI expects currentVelocity and windSpeed
+     * in km/h.
+     *
+     * Copernicus/Open-Meteo pipeline JSON stores both in m/s.
+     */
+    const currentVelocityKmh =
+      currentSpeedMs == null ? null : currentSpeedMs * 3.6;
+
+    const windSpeedKmh =
+      windSpeedMs == null ? null : windSpeedMs * 3.6;
+
+    return {
+      source: {
+        name: "Copernicus Marine + Open-Meteo",
+        url: "https://marine.copernicus.eu/",
+      },
+
+      /*
+       * generated_at_utc records when our hourly pipeline assembled
+       * this conditions snapshot.
+       */
+      issuedAt: live?.generated_at_utc ?? null,
+      fetchedAt: new Date().toISOString(),
+
+      current: {
+        time: live?.generated_at_utc ?? null,
+
+        sst: num(live?.marine?.sea_temperature_c),
+
+        waveHeight: num(
+          live?.marine?.waves?.significant_height_m,
+        ),
+        waveDirection: num(
+          live?.marine?.waves?.from_degrees,
+        ),
+
+        currentVelocity: currentVelocityKmh,
+        currentDirection: num(
+          live?.marine?.current?.toward_degrees,
+        ),
+
+        airTemp: num(live?.weather?.air_temperature_c),
+
+        windSpeed: windSpeedKmh,
+        windDirection: num(
+          live?.weather?.wind?.from_degrees,
+        ),
+
+        cloudCover: num(
+          live?.weather?.cloud_cover_percent,
+        ),
+
+        sunrise: weather?.daily?.sunrise?.[0] ?? null,
+        sunset: weather?.daily?.sunset?.[0] ?? null,
+      },
+
+      /*
+       * Not yet supplied by the current Kriopigi pipeline.
+       * The UI already hides null values.
+       */
+      waterQuality: {
+        salinity: null,
+        chlorophyll: null,
+      },
+
+      days,
+    };
+  },
+);
