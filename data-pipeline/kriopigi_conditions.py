@@ -13,7 +13,7 @@ import xarray as xr
 LAT = 40.046
 LON = 23.480
 
-COPERNICUS = "./copernicusmarine_macos-arm64.cli"
+COPERNICUS = "copernicusmarine"
 
 CURRENT_FILE = Path("kriopigi_currents.nc")
 TEMP_FILE = Path("kriopigi_temperature.nc")
@@ -225,7 +225,7 @@ def main():
 
     json_text = json.dumps(output, indent=2, ensure_ascii=False)
 
-    Path("kriopigi_conditions.json").write_text(json_text + "\n")
+    (Path(__file__).resolve().parent / "kriopigi_conditions.json").write_text(json_text + "\n")
     print(json_text)
 
 

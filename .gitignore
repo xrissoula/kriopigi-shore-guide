@@ -24,3 +24,7 @@ dist/
 
 # Logs
 *.log
+
+# Local script backups
+*_before_*.py
+*_backup.py
