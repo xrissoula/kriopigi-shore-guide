@@ -12,8 +12,8 @@ import anthropologyTower from "@/assets/anthropology-tower.webp";
 export const Route = createFileRoute("/field-notes/biogeochemistry")({
   head: () => ({
     meta: [
-      { title: "Biogeochemistry of the Aegean — Kriopigi Shore Guide" },
-      { name: "description", content: "From plate tectonics to dissolved oxygen — how the Aegean's deep architecture shapes its living chemistry." },
+      { title: "Biogeochemistry of the Aegean | Kriopigi Shore Guide" },
+      { name: "description", content: "From plate tectonics to dissolved oxygen, how the Aegean's deep architecture shapes its living chemistry." },
     ],
   }),
   component: Biogeochemistry,
@@ -33,7 +33,7 @@ const stages: Stage[] = [
   {
     eyebrow: "Back-arc extension",
     title: "Graben, volcanoes, and a stretched crust",
-    body: "Behind the arc, the Aegean crust pulls apart. The North Aegean and Skyros basins open as tectonic graben, while the volcanic arc — Methana, Milos, Santorini, Nisyros — punches through the thinned crust. This extensional architecture largely determines the depth and geometry of the basins that guide modern water circulation.",
+    body: "Behind the arc, the Aegean crust pulls apart. The North Aegean and Skyros basins open as tectonic graben, while the volcanic arc, Methana, Milos, Santorini, Nisyros, punches through the thinned crust. This extensional architecture largely determines the depth and geometry of the basins that guide modern water circulation.",
     image: tectonicGraben,
     alt: "Map of tectonic graben and volcanism in the Aegean, Greece",
     caption: "Active tectonic graben and the Aegean volcanic arc. After Papanikolaou, Nomikou & Lampridou (2025), 'Tectonic graben and volcanism in the Aegean, Greece', Geological Society, London, Special Publications 560.",
@@ -60,7 +60,7 @@ const stages: Stage[] = [
     body: "Water exchanged through the Cretan Straits links the Aegean to the wider Eastern Mediterranean. These exchanges contribute to the formation and transformation of intermediate and deep water masses, including Levantine Intermediate Water, which plays a major role in ventilating the eastern Mediterranean. The Rhodes Gyre, farther to the southeast, is one of the basin's principal sites of winter deep-water formation and oxygenation. The chemistry of the water at Kriopigi is one node within this much larger circulation.",
     image: levantineOxygen,
     alt: "Map of dissolved oxygen and circulation in the Levantine Sea",
-    caption: "Dissolved oxygen and circulation in the Levantine Basin. From Habib et al. (2026), 'Dissolved oxygen budget in the Levantine Sea: a coupled physical-biogeochemical modelling approach', Biogeosciences 23, 2939–2958, https://doi.org/10.5194/bg-23-2939-2026 (CC BY 4.0).",
+    caption: "Dissolved oxygen and circulation in the Levantine Basin. From Habib et al. (2026), 'Dissolved oxygen budget in the Levantine Sea: a coupled physical-biogeochemical modelling approach', Biogeosciences 23, 2939-2958, https://doi.org/10.5194/bg-23-2939-2026 (CC BY 4.0).",
   },
 ];
 
@@ -71,7 +71,7 @@ function Biogeochemistry() {
       <PageHeader
         eyebrow={t("Deep Time · II")}
         title={t("Biogeochemistry of the Aegean")}
-        lead={t("From a subducting plate to dissolved oxygen — five layers of process that meet at the Kriopigi shore.")}
+        lead={t("From a subducting plate to dissolved oxygen, five layers of process that meet at the Kriopigi shore.")}
       />
       <div className="px-5 max-w-3xl mx-auto pb-12">
         <Link to="/field-notes/geology" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground">

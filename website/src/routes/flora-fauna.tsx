@@ -12,9 +12,9 @@ import eupholidoptera from "@/assets/eupholidoptera-smyrnensis.jpg.asset.json";
 export const Route = createFileRoute("/flora-fauna")({
   head: () => ({
     meta: [
-      { title: "Flora & Fauna — Kriopigi Shore Guide" },
-      { name: "description", content: "A field catalogue of Kriopigi's species, zone by zone — from the pine-shaded dune to the deep-water meadows." },
-      { property: "og:title", content: "Flora & Fauna — Kriopigi Shore Guide" },
+      { title: "Flora & Fauna | Kriopigi Shore Guide" },
+      { name: "description", content: "A field catalogue of Kriopigi's species, zone by zone, from the pine-shaded dune to the deep-water meadows." },
+      { property: "og:title", content: "Flora & Fauna | Kriopigi Shore Guide" },
       { property: "og:description", content: "From the pine line to the open sea: five ecological zones of the Kriopigi shore." },
     ],
   }),
@@ -32,7 +32,7 @@ const zones: Zone[] = [
     eyebrow: "Zone 1",
     title: "Dune & Pine Edge",
     depth: "Above the high tide line",
-    lead: "The terrestrial fringe — sand-binding plants and the Aleppo pine canopy that shades the shore.",
+    lead: "The terrestrial fringe, sand-binding plants and the Aleppo pine canopy that shades the shore.",
     species: [
       { sci: "Pinus halepensis", common: "Aleppo pine", note: "Dominant canopy tree; its resin perfumes the shoreline on hot summer afternoons.", status: "expected", wiki: W + "Pinus_halepensis", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/%CE%A7%CE%B1%CE%BB%CE%AD%CF%80%CE%B9%CE%BF%CF%82_%CF%80%CE%B5%CF%8D%CE%BA%CE%B7_%CE%A3%CE%BF%CF%8D%CE%BD%CE%B9%CE%BF_1963.jpg/330px-%CE%A7%CE%B1%CE%BB%CE%AD%CF%80%CE%B9%CE%BF%CF%82_%CF%80%CE%B5%CF%8D%CE%BA%CE%B7_%CE%A3%CE%BF%CF%8D%CE%BD%CE%B9%CE%BF_1963.jpg" },
       { sci: "Eryngium maritimum", common: "Sea holly", note: "Spiny blue-grey leaves anchor the upper dunes and bloom with metallic-blue flowers in summer.", status: "expected", wiki: W + "Eryngium_maritimum", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Eryngium_maritimum_-_geograph.org.uk_-_496275.jpg/330px-Eryngium_maritimum_-_geograph.org.uk_-_496275.jpg" },
@@ -58,8 +58,8 @@ const zones: Zone[] = [
     id: "shore",
     eyebrow: "Zone 2",
     title: "Beach & Wash Zone",
-    depth: "0 – 0.5 m",
-    lead: "The wet sand and breaking surf — turnover habitat for crabs, isopods, and shorebirds.",
+    depth: "0-0.5 m",
+    lead: "The wet sand and breaking surf, turnover habitat for crabs, isopods, and shorebirds.",
     species: [
       { sci: "Ocypode cursor", common: "Tufted ghost crab", note: "Fast, pale crab that vanishes into deep burrows above the surf line.", status: "expected", wiki: W + "Ocypode_cursor", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Ocypode_cursor_1.jpg/330px-Ocypode_cursor_1.jpg" },
       { sci: "Tylos europaeus", common: "Beach isopod", note: "Nocturnal scavenger that recycles stranded seaweed along the upper beach.", status: "expected", wiki: W + "Tylos_(crustacean)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tylos_punctatus_dorsal.jpg/330px-Tylos_punctatus_dorsal.jpg" },
@@ -71,12 +71,12 @@ const zones: Zone[] = [
     id: "shallows",
     eyebrow: "Zone 3",
     title: "Shallow Water",
-    depth: "0.5 – 5 m",
+    depth: "0.5-5 m",
     lead: "Sun-warmed sand, scattered rocks and the inner edge of the seagrass meadow support many of the fish most easily seen by snorkelers.",
     species: [
       { sci: "Atherina hepsetus", common: "Mediterranean sand smelt", note: "Silvery schools shimmer just below the surface over calm, shallow water.", status: "expected", wiki: W + "Atherina_hepsetus", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Atherina_hepsetus_449181144.jpg/330px-Atherina_hepsetus_449181144.jpg" },
       { sci: "Diplodus vulgaris", common: "Common two-banded seabream", note: "Recognizable by two bold black bands; juveniles gather around rocks and seagrass.", status: "confirmed", wiki: W + "Diplodus_vulgaris", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Mojarra_%28Diplodus_vulgaris%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-31%2C_DD_20.jpg/330px-Mojarra_%28Diplodus_vulgaris%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-31%2C_DD_20.jpg" },
-      { sci: "Sarpa salpa", common: "Salema", note: "Herbivorous schools graze algae and seagrass leaves along the meadow’s edge.", status: "confirmed", wiki: W + "Salema_porgy", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Sarpa_salpa_.jpg/330px-Sarpa_salpa_.jpg" },
+      { sci: "Sarpa salpa", common: "Salema", note: "Herbivorous schools graze algae and seagrass leaves along the meadow's edge.", status: "confirmed", wiki: W + "Salema_porgy", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Sarpa_salpa_.jpg/330px-Sarpa_salpa_.jpg" },
       { sci: "Dicentrarchus labrax", common: "European seabass", note: "Streamlined predator that cruises shallow coastal water, often near rocks and sandy edges.", status: "confirmed", wiki: W + "European_bass" , img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Sealife%2C_Bray%2C_Ireland._%286985874908%29.jpg/330px-Sealife%2C_Bray%2C_Ireland._%286985874908%29.jpg" },
       { sci: "Sparus aurata", common: "Gilthead seabream", note: "Recognizable by the golden band between its eyes; feeds over sand, rock and seagrass.", status: "confirmed", wiki: W + "Gilt-head_bream" , img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Sparus_aurata%2C_Alpes-Maritimes%2C_Provence-Alpes-C%C3%B4te_d%27Azur%2C_FR_imported_from_iNaturalist_photo_207799710.jpg/330px-Sparus_aurata%2C_Alpes-Maritimes%2C_Provence-Alpes-C%C3%B4te_d%27Azur%2C_FR_imported_from_iNaturalist_photo_207799710.jpg" },
       { sci: "Diplodus sargus", common: "White seabream", note: "Robust silver seabream with dark vertical markings, commonly feeding around rocky shallows.", status: "confirmed", wiki: W + "White_seabream" , img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Sargo_com%C3%BAn_%28Diplodus_sargus%29%2C_Madeira%2C_Portugal%2C_2019-05-31%2C_DD_29.jpg/330px-Sargo_com%C3%BAn_%28Diplodus_sargus%29%2C_Madeira%2C_Portugal%2C_2019-05-31%2C_DD_29.jpg" },
@@ -92,11 +92,11 @@ const zones: Zone[] = [
     id: "meadow",
     eyebrow: "Zone 4",
     title: "Posidonia Meadow",
-    depth: "5 – 15 m",
+    depth: "5-15 m",
     lead: "An endemic Mediterranean seagrass meadow forming one of the coast's richest habitats, with shelter, feeding grounds and complex structure for marine life.",
     species: [
       { sci: "Posidonia oceanica", common: "Neptune grass", note: "A true flowering plant that forms long-lived underwater meadows supporting diverse Mediterranean marine life.", status: "expected", wiki: W + "Posidonia_oceanica", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Posidonia_oceanica_%28L%29.jpg/330px-Posidonia_oceanica_%28L%29.jpg" },
-      { sci: "Pinna nobilis", common: "Noble pen shell", note: "The Mediterranean’s largest bivalve; now critically endangered and fully protected.", status: "expected", wiki: W + "Pinna_nobilis", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Pinnidae_-_Pinna_nobilis.jpg/330px-Pinnidae_-_Pinna_nobilis.jpg" },
+      { sci: "Pinna nobilis", common: "Noble pen shell", note: "The Mediterranean's largest bivalve; now critically endangered and fully protected.", status: "expected", wiki: W + "Pinna_nobilis", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Pinnidae_-_Pinna_nobilis.jpg/330px-Pinnidae_-_Pinna_nobilis.jpg" },
       { sci: "Octopus vulgaris", common: "Common octopus", note: "Empty shells piled outside a rocky crevice often reveal an occupied den.", status: "expected", wiki: W + "Common_octopus", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Octopus2.jpg/330px-Octopus2.jpg" },
       { sci: "Symphodus tinca", common: "Peacock wrasse", note: "Large colourful wrasse; males become especially vivid during the breeding season.", status: "confirmed", wiki: W + "Symphodus_tinca", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Symphodus_tinca_m%C3%A2le_avec_des_femelles_%28Linnaeus%2C_1758%29.jpg/330px-Symphodus_tinca_m%C3%A2le_avec_des_femelles_%28Linnaeus%2C_1758%29.jpg" },
       { sci: "Coris julis", common: "Mediterranean rainbow wrasse", note: "Fast, colourful wrasse that darts across rocky and vegetated bottoms searching for small prey.", status: "confirmed", wiki: W + "Coris_julis" , img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Doncella_%28Coris_julis%29%2C_Cabo_de_Palos%2C_Espa%C3%B1a%2C_2022-07-17%2C_DD_69.jpg/330px-Doncella_%28Coris_julis%29%2C_Cabo_de_Palos%2C_Espa%C3%B1a%2C_2022-07-17%2C_DD_69.jpg" },
@@ -111,7 +111,7 @@ const zones: Zone[] = [
     eyebrow: "Zone 5",
     title: "Deep Water & Offshore",
     depth: "15 m and beyond",
-    lead: "Beyond the meadow's outer edge — coralligenous reefs, pelagic visitors, and migratory megafauna.",
+    lead: "Beyond the meadow's outer edge, coralligenous reefs, pelagic visitors, and migratory megafauna.",
     species: [
       { sci: "Caretta caretta", common: "Loggerhead sea turtle", note: "Wide-ranging marine turtle that may pass through northern Aegean coastal and offshore waters.", status: "expected", expectedContext: "offshore", wiki: W + "Loggerhead_sea_turtle", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Loggerhead_sea_turtle.jpg/330px-Loggerhead_sea_turtle.jpg" },
       { sci: "Tursiops truncatus", common: "Common bottlenose dolphin", note: "Social coastal dolphin that travels in groups through the gulf and occasionally approaches shore.", status: "confirmed", wiki: W + "Common_bottlenose_dolphin", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Tursiops_truncatus_01-cropped.jpg/330px-Tursiops_truncatus_01-cropped.jpg" },
@@ -168,12 +168,12 @@ function FloraFauna() {
             <img src={maquisShrubland} alt={t("A sandy footpath descending through dense maquis shrubland to the turquoise shallows of a Kriopigi cove.")} loading="lazy" className="w-full h-auto object-contain bg-muted" />
             <figcaption className="px-5 py-2 text-[11px] text-muted-foreground bg-muted/30 border-y border-border">{t("Maquis flanking a path down to the cove.")}</figcaption>
           </figure>
-          <p className="mt-3 text-sm text-foreground/80 leading-relaxed">{t("Beneath the pines grows dense evergreen maquis — a tangle of kermes oak, lentisk, strawberry tree, wild olive, myrtle, rosemary, sage and thyme. These aromatic shrubs form one of the characteristic ecosystems of the Mediterranean Basin and provide shelter and food for countless insects, reptiles and birds.")}</p>
+          <p className="mt-3 text-sm text-foreground/80 leading-relaxed">{t("Beneath the pines grows dense evergreen maquis, a tangle of kermes oak, lentisk, strawberry tree, wild olive, myrtle, rosemary, sage and thyme. These aromatic shrubs form one of the characteristic ecosystems of the Mediterranean Basin and provide shelter and food for countless insects, reptiles and birds.")}</p>
           <h3 className="mt-5 font-serif text-xl text-foreground">{t("Phrygana on the dry edges")}</h3>
           <p className="text-[10px] uppercase tracking-[0.25em] text-accent mt-1">{t("Degraded / exposed dry edge ecology")}</p>
           <figure className="mt-3 -mx-5 overflow-hidden">
             <img src={phryganaTortoise} alt={t("Dry-edge phrygana habitat above Kriopigi: thin rocky soil, sparse drought-adapted scrub, and a small erosional drainage cut beside a dirt track.")} loading="lazy" className="w-full h-auto object-contain bg-muted" />
-            <figcaption className="px-5 py-2 text-[11px] text-muted-foreground bg-muted/30 border-y border-border">{t("Phrygana scrub and a seasonal erosion channel above the shore—typical habitat for Boettger’s tortoise (Testudo hermanni boettgeri), which is occasionally encountered in these dry, open Mediterranean slopes.")}</figcaption>
+            <figcaption className="px-5 py-2 text-[11px] text-muted-foreground bg-muted/30 border-y border-border">{t("Phrygana scrub and a seasonal erosion channel above the shore, typical habitat for Boettger's tortoise (Testudo hermanni boettgeri), which is occasionally encountered in these dry, open Mediterranean slopes.")}</figcaption>
           </figure>
           <p className="mt-3 text-sm text-foreground/80 leading-relaxed">{t("Where soils are shallower, conditions drier and more exposed, or where repeated fire and grazing maintain a lower shrub community, maquis gives way to phrygana. Phrygana is a natural and widespread Mediterranean ecosystem of low, aromatic, often thorny shrubs; human activity often expands or maintains it, but it is not simply degraded maquis. On the dry slopes above Kriopigi, it forms an important transition zone between forest and open coast.")}</p>
         </section>
@@ -182,7 +182,7 @@ function FloraFauna() {
           <h3 className="font-serif text-xl text-foreground">{t("The coast itself")}</h3>
           <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{t("Rocky ledges, tide pools and small pocket beaches create dozens of microhabitats. Crevices provide shelter from waves and predators, while algae, encrusting organisms and accumulated wrack support diverse communities of molluscs, crustaceans, fishes and other marine life.")}</p>
           <h3 className="mt-5 font-serif text-xl text-foreground">{t("Posidonia meadow offshore")}</h3>
-          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{t("Underwater, the keystone habitat is the Posidonia oceanica meadow. This is not seaweed — it is a true marine flowering plant endemic to the Mediterranean. Its meadows stabilise sediments, improve water clarity, store large amounts of carbon, and provide habitat and refuge for countless marine organisms. They are among the Mediterranean's most important coastal habitats, supporting many juvenile fishes and invertebrates.")}</p>
+          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{t("Underwater, the keystone habitat is the Posidonia oceanica meadow. This is not seaweed, it is a true marine flowering plant endemic to the Mediterranean. Its meadows stabilise sediments, improve water clarity, store large amounts of carbon, and provide habitat and refuge for countless marine organisms. They are among the Mediterranean's most important coastal habitats, supporting many juvenile fishes and invertebrates.")}</p>
         </section>
 
         <section>
@@ -276,7 +276,7 @@ function FloraFauna() {
                   </a>
                   <span className="text-xs text-accent">{t("Sea sparkle")}</span>
                 </div>
-                <p className="mt-1.5 text-sm text-foreground/75 leading-relaxed">{t("A single-celled planktonic dinoflagellate — neither animal nor plant — whose blooms can produce blue bioluminescent flashes when the water is disturbed at night.")}</p>
+                <p className="mt-1.5 text-sm text-foreground/75 leading-relaxed">{t("A single-celled planktonic dinoflagellate, neither animal nor plant, whose blooms can produce blue bioluminescent flashes when the water is disturbed at night.")}</p>
                 <p className="mt-2 text-xs text-accent flex items-center gap-1">
                   <span aria-hidden>✓</span>
                   {t("Observed at Kriopigi")}

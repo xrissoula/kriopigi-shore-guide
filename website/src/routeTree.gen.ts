@@ -9,58 +9,23 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as SubmitRouteImport } from './routes/submit'
-import { Route as SnorkelingRouteImport } from './routes/snorkeling'
-import { Route as OralHistoryRouteImport } from './routes/oral-history'
-import { Route as MapRouteImport } from './routes/map'
-import { Route as FloraFaunaRouteImport } from './routes/flora-fauna'
-import { Route as FieldNotesRouteImport } from './routes/field-notes'
-import { Route as ConservationRouteImport } from './routes/conservation'
-import { Route as ConditionsRouteImport } from './routes/conditions'
-import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as FieldNotesGeologyRouteImport } from './routes/field-notes.geology'
-import { Route as FieldNotesBiogeochemistryRouteImport } from './routes/field-notes.biogeochemistry'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as ConditionsRouteImport } from './routes/conditions'
+import { Route as ConservationRouteImport } from './routes/conservation'
+import { Route as FieldNotesRouteImport } from './routes/field-notes'
+import { Route as FloraFaunaRouteImport } from './routes/flora-fauna'
+import { Route as MapRouteImport } from './routes/map'
+import { Route as OralHistoryRouteImport } from './routes/oral-history'
+import { Route as SnorkelingRouteImport } from './routes/snorkeling'
+import { Route as SubmitRouteImport } from './routes/submit'
 import { Route as FieldNotesAnthropologyRouteImport } from './routes/field-notes.anthropology'
+import { Route as FieldNotesBiogeochemistryRouteImport } from './routes/field-notes.biogeochemistry'
+import { Route as FieldNotesGeologyRouteImport } from './routes/field-notes.geology'
 
-const SubmitRoute = SubmitRouteImport.update({
-  id: '/submit',
-  path: '/submit',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SnorkelingRoute = SnorkelingRouteImport.update({
-  id: '/snorkeling',
-  path: '/snorkeling',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const OralHistoryRoute = OralHistoryRouteImport.update({
-  id: '/oral-history',
-  path: '/oral-history',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const MapRoute = MapRouteImport.update({
-  id: '/map',
-  path: '/map',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FloraFaunaRoute = FloraFaunaRouteImport.update({
-  id: '/flora-fauna',
-  path: '/flora-fauna',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FieldNotesRoute = FieldNotesRouteImport.update({
-  id: '/field-notes',
-  path: '/field-notes',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ConservationRoute = ConservationRouteImport.update({
-  id: '/conservation',
-  path: '/conservation',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ConditionsRoute = ConditionsRouteImport.update({
-  id: '/conditions',
-  path: '/conditions',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -68,14 +33,49 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const ConditionsRoute = ConditionsRouteImport.update({
+  id: '/conditions',
+  path: '/conditions',
   getParentRoute: () => rootRouteImport,
 } as any)
-const FieldNotesGeologyRoute = FieldNotesGeologyRouteImport.update({
-  id: '/geology',
-  path: '/geology',
+const ConservationRoute = ConservationRouteImport.update({
+  id: '/conservation',
+  path: '/conservation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FieldNotesRoute = FieldNotesRouteImport.update({
+  id: '/field-notes',
+  path: '/field-notes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FloraFaunaRoute = FloraFaunaRouteImport.update({
+  id: '/flora-fauna',
+  path: '/flora-fauna',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MapRoute = MapRouteImport.update({
+  id: '/map',
+  path: '/map',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OralHistoryRoute = OralHistoryRouteImport.update({
+  id: '/oral-history',
+  path: '/oral-history',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SnorkelingRoute = SnorkelingRouteImport.update({
+  id: '/snorkeling',
+  path: '/snorkeling',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SubmitRoute = SubmitRouteImport.update({
+  id: '/submit',
+  path: '/submit',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FieldNotesAnthropologyRoute = FieldNotesAnthropologyRouteImport.update({
+  id: '/anthropology',
+  path: '/anthropology',
   getParentRoute: () => FieldNotesRoute,
 } as any)
 const FieldNotesBiogeochemistryRoute =
@@ -84,9 +84,9 @@ const FieldNotesBiogeochemistryRoute =
     path: '/biogeochemistry',
     getParentRoute: () => FieldNotesRoute,
   } as any)
-const FieldNotesAnthropologyRoute = FieldNotesAnthropologyRouteImport.update({
-  id: '/anthropology',
-  path: '/anthropology',
+const FieldNotesGeologyRoute = FieldNotesGeologyRouteImport.update({
+  id: '/geology',
+  path: '/geology',
   getParentRoute: () => FieldNotesRoute,
 } as any)
 
@@ -199,60 +199,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/submit': {
-      id: '/submit'
-      path: '/submit'
-      fullPath: '/submit'
-      preLoaderRoute: typeof SubmitRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/snorkeling': {
-      id: '/snorkeling'
-      path: '/snorkeling'
-      fullPath: '/snorkeling'
-      preLoaderRoute: typeof SnorkelingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/oral-history': {
-      id: '/oral-history'
-      path: '/oral-history'
-      fullPath: '/oral-history'
-      preLoaderRoute: typeof OralHistoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/map': {
-      id: '/map'
-      path: '/map'
-      fullPath: '/map'
-      preLoaderRoute: typeof MapRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/flora-fauna': {
-      id: '/flora-fauna'
-      path: '/flora-fauna'
-      fullPath: '/flora-fauna'
-      preLoaderRoute: typeof FloraFaunaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/field-notes': {
-      id: '/field-notes'
-      path: '/field-notes'
-      fullPath: '/field-notes'
-      preLoaderRoute: typeof FieldNotesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/conservation': {
-      id: '/conservation'
-      path: '/conservation'
-      fullPath: '/conservation'
-      preLoaderRoute: typeof ConservationRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/conditions': {
-      id: '/conditions'
-      path: '/conditions'
-      fullPath: '/conditions'
-      preLoaderRoute: typeof ConditionsRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -262,18 +213,67 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/conditions': {
+      id: '/conditions'
+      path: '/conditions'
+      fullPath: '/conditions'
+      preLoaderRoute: typeof ConditionsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/field-notes/geology': {
-      id: '/field-notes/geology'
-      path: '/geology'
-      fullPath: '/field-notes/geology'
-      preLoaderRoute: typeof FieldNotesGeologyRouteImport
+    '/conservation': {
+      id: '/conservation'
+      path: '/conservation'
+      fullPath: '/conservation'
+      preLoaderRoute: typeof ConservationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/field-notes': {
+      id: '/field-notes'
+      path: '/field-notes'
+      fullPath: '/field-notes'
+      preLoaderRoute: typeof FieldNotesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/flora-fauna': {
+      id: '/flora-fauna'
+      path: '/flora-fauna'
+      fullPath: '/flora-fauna'
+      preLoaderRoute: typeof FloraFaunaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/map': {
+      id: '/map'
+      path: '/map'
+      fullPath: '/map'
+      preLoaderRoute: typeof MapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/oral-history': {
+      id: '/oral-history'
+      path: '/oral-history'
+      fullPath: '/oral-history'
+      preLoaderRoute: typeof OralHistoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/snorkeling': {
+      id: '/snorkeling'
+      path: '/snorkeling'
+      fullPath: '/snorkeling'
+      preLoaderRoute: typeof SnorkelingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/submit': {
+      id: '/submit'
+      path: '/submit'
+      fullPath: '/submit'
+      preLoaderRoute: typeof SubmitRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/field-notes/anthropology': {
+      id: '/field-notes/anthropology'
+      path: '/anthropology'
+      fullPath: '/field-notes/anthropology'
+      preLoaderRoute: typeof FieldNotesAnthropologyRouteImport
       parentRoute: typeof FieldNotesRoute
     }
     '/field-notes/biogeochemistry': {
@@ -283,11 +283,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FieldNotesBiogeochemistryRouteImport
       parentRoute: typeof FieldNotesRoute
     }
-    '/field-notes/anthropology': {
-      id: '/field-notes/anthropology'
-      path: '/anthropology'
-      fullPath: '/field-notes/anthropology'
-      preLoaderRoute: typeof FieldNotesAnthropologyRouteImport
+    '/field-notes/geology': {
+      id: '/field-notes/geology'
+      path: '/geology'
+      fullPath: '/field-notes/geology'
+      preLoaderRoute: typeof FieldNotesGeologyRouteImport
       parentRoute: typeof FieldNotesRoute
     }
   }

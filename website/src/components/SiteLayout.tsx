@@ -71,10 +71,10 @@ export function SiteLayout({ children }: { children: ReactNode }) {
         </div>
       </header>
 
-      <main className="flex-1 pb-24 md:pb-12">{children}</main>
+      <main className="pb-2 md:pb-10">{children}</main>
 
-      <footer className="border-t border-border py-8 px-5 text-center text-xs text-muted-foreground">
-        <p className="font-serif italic text-base text-foreground/70">{t('"If you take Greece apart, in the end all that will remain are an olive tree, a vine, and a ship. Which means: with those three things, you can build her again." — Odysseas Elytis')}</p>
+      <footer className="border-t border-border py-4 pb-32 md:pb-6 px-5 text-center text-xs text-muted-foreground">
+        <p className="font-serif italic text-base text-foreground/70">{t('"If you take Greece apart, in the end all that will remain are an olive tree, a vine, and a ship. Which means: with those three things, you can build her again." - Odysseas Elytis')}</p>
         <p className="mt-2">{t("Kriopigi Shore Guide · Halkidiki, Greece")}</p>
       </footer>
 

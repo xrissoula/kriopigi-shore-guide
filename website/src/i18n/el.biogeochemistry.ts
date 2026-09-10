@@ -3,8 +3,8 @@ export const elBiogeochemistry: Record<string, string> = {
   // --- Page header ---
   "Deep Time · II": "Βαθύς Χρόνος · II",
   "Biogeochemistry of the Aegean": "Βιογεωχημεία του Αιγαίου",
-  "From a subducting plate to dissolved oxygen — five layers of process that meet at the Kriopigi shore.":
-    "Από την καταβύθιση μιας λιθοσφαιρικής πλάκας έως το διαλυμένο οξυγόνο — πέντε επίπεδα διεργασιών που διαμορφώνουν τις ακτές της Κρυοπηγής.",
+  "From a subducting plate to dissolved oxygen, five layers of process that meet at the Kriopigi shore.":
+    "Από την καταβύθιση μιας λιθοσφαιρικής πλάκας έως το διαλυμένο οξυγόνο, πέντε επίπεδα διεργασιών που διαμορφώνουν τις ακτές της Κρυοπηγής.",
   "Back to Geology": "Επιστροφή στη Γεωλογία",
 
   // --- Continue card ---
@@ -27,8 +27,8 @@ export const elBiogeochemistry: Record<string, string> = {
 
   "Back-arc extension": "Εφελκυσμός του οπισθότοξου",
   "Graben, volcanoes, and a stretched crust": "Τεκτονικές τάφροι, ηφαίστεια και εκτεταμένος φλοιός",
-  "Behind the arc, the Aegean crust pulls apart. The North Aegean and Skyros basins open as tectonic graben, while the volcanic arc — Methana, Milos, Santorini, Nisyros — punches through the thinned crust. This extensional architecture largely determines the depth and geometry of the basins that guide modern water circulation.":
-    "Πίσω από το Ελληνικό Τόξο, ο φλοιός του Αιγαίου διατείνεται και λεπταίνει. Οι λεκάνες του Βόρειου Αιγαίου και της Σκύρου σχηματίζονται ως τεκτονικές τάφροι (graben), ενώ το ηφαιστειακό τόξο — Μέθανα, Μήλος, Σαντορίνη και Νίσυρος — διαπερνά τον λεπτυσμένο φλοιό. Αυτή η εκτατική δομή διαμόρφωσε το βάθος και τη γεωμετρία των λεκανών μέσα στις οποίες κυκλοφορούν σήμερα οι υδάτινες μάζες του Αιγαίου.",
+  "Behind the arc, the Aegean crust pulls apart. The North Aegean and Skyros basins open as tectonic graben, while the volcanic arc, Methana, Milos, Santorini, Nisyros, punches through the thinned crust. This extensional architecture largely determines the depth and geometry of the basins that guide modern water circulation.":
+    "Πίσω από το Ελληνικό Τόξο, ο φλοιός του Αιγαίου διατείνεται και λεπταίνει. Οι λεκάνες του Βόρειου Αιγαίου και της Σκύρου σχηματίζονται ως τεκτονικές τάφροι (graben), ενώ το ηφαιστειακό τόξο, Μέθανα, Μήλος, Σαντορίνη και Νίσυρος, διαπερνά τον λεπτυσμένο φλοιό. Αυτή η εκτατική δομή διαμόρφωσε το βάθος και τη γεωμετρία των λεκανών μέσα στις οποίες κυκλοφορούν σήμερα οι υδάτινες μάζες του Αιγαίου.",
   "Map of tectonic graben and volcanism in the Aegean, Greece":
     "Χάρτης τεκτονικών ταφρών και ηφαιστειότητας στο Αιγαίο, Ελλάδα",
   "Active tectonic graben and the Aegean volcanic arc. After Papanikolaou, Nomikou & Lampridou (2025), 'Tectonic graben and volcanism in the Aegean, Greece', Geological Society, London, Special Publications 560.":
@@ -55,6 +55,6 @@ export const elBiogeochemistry: Record<string, string> = {
   "Water exchanged through the Cretan Straits links the Aegean to the wider Eastern Mediterranean. These exchanges contribute to the formation and transformation of intermediate and deep water masses, including Levantine Intermediate Water, which plays a major role in ventilating the eastern Mediterranean. The Rhodes Gyre, farther to the southeast, is one of the basin's principal sites of winter deep-water formation and oxygenation. The chemistry of the water at Kriopigi is one node within this much larger circulation.":
     "Το Αιγαίο ανταλλάσσει επιφανειακά, ενδιάμεσα και βαθιά νερά με την υπόλοιπη Ανατολική Μεσόγειο μέσω των στενών της Κρήτης. Πιο νοτιοανατολικά, στον στρόβιλο της Ρόδου, ο χειμερινός σχηματισμός ενδιάμεσων υδάτων και η πρόσληψη οξυγόνου αποτελούν σημαντικές διεργασίες για την ανατολική Μεσόγειο. Η χημεία των νερών στην Κρυοπηγή αποτελεί ένα μικρό μέρος αυτού του ευρύτερου συστήματος κυκλοφορίας.",
   "Map of dissolved oxygen and circulation in the Levantine Sea": "Χάρτης διαλυμένου οξυγόνου και κυκλοφορίας στη Λεκάνη της Λεβαντίνης",
-  "Dissolved oxygen and circulation in the Levantine Basin. From Habib et al. (2026), 'Dissolved oxygen budget in the Levantine Sea: a coupled physical-biogeochemical modelling approach', Biogeosciences 23, 2939–2958, https://doi.org/10.5194/bg-23-2939-2026 (CC BY 4.0).":
-    "Διαλυμένο οξυγόνο και κυκλοφορία των νερών στη Λεκάνη της Λεβαντίνης. Από τους Habib και συν. (2026), Biogeosciences 23, 2939–2958, https://doi.org/10.5194/bg-23-2939-2026 (CC BY 4.0).",
+  "Dissolved oxygen and circulation in the Levantine Basin. From Habib et al. (2026), 'Dissolved oxygen budget in the Levantine Sea: a coupled physical-biogeochemical modelling approach', Biogeosciences 23, 2939-2958, https://doi.org/10.5194/bg-23-2939-2026 (CC BY 4.0).":
+    "Διαλυμένο οξυγόνο και κυκλοφορία των νερών στη Λεκάνη της Λεβαντίνης. Από τους Habib και συν. (2026), Biogeosciences 23, 2939-2958, https://doi.org/10.5194/bg-23-2939-2026 (CC BY 4.0).",
 };

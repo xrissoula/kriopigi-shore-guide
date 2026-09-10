@@ -9,7 +9,7 @@ export const elSnorkel: Record<string, string> = {
   "Posidonia meadow in shallow water off Kriopigi":
     "Λιβάδι Ποσειδωνίας σε ρηχά νερά ανοιχτά της Κρυοπηγής",
   "Look for": "Αναζητήστε",
-  "Can you find…": "Μπορείτε να βρείτε…",
+  "Can you find...": "Μπορείτε να βρείτε...",
   "Look closely": "Κοιτάξτε προσεκτικά",
   "Tiny tip": "Μικρή συμβουλή",
 
@@ -53,22 +53,22 @@ export const elSnorkel: Record<string, string> = {
   "a little wrasse investigating your fins":
     "μια μικρή χειλού που εξετάζει τα πέδιλά σας",
   "What people say here": "Τι λένε όλοι εδώ",
-  "“There are way more fish here than I expected.” Almost everyone says it in the first two minutes.":
-    "«Έχει πολύ περισσότερα ψάρια απ’ όσα περίμενα.» Είναι από τα πρώτα πράγματα που προσέχει κανείς μόλις μπει στο νερό.",
+  "'There are way more fish here than I expected.' Almost everyone says it in the first two minutes.":
+    "«Έχει πολύ περισσότερα ψάρια απ' όσα περίμενα.» Είναι από τα πρώτα πράγματα που προσέχει κανείς μόλις μπει στο νερό.",
 
   // --- Zone 3 ---
   "Zone 3": "ΖΩΝΗ 3",
   "Sandy Bottom": "Αμμώδης βυθός",
-  "2–5 m below you": "2–5 μ. κάτω από εσάς",
-  "Now you are floating. This is where you start slowing down — the sand looks blank until you give it time.":
-    "Τώρα επιπλέετε. Εδώ αξίζει να επιβραδύνετε — η άμμος μοιάζει άδεια μόνο μέχρι να της δώσετε λίγο χρόνο.",
+  "2-5 m below you": "2-5 μ. κάτω από εσάς",
+  "Now you are floating. This is where you start slowing down, the sand looks blank until you give it time.":
+    "Τώρα επιπλέετε. Εδώ αξίζει να επιβραδύνετε, η άμμος μοιάζει άδεια μόνο μέχρι να της δώσετε λίγο χρόνο.",
   "a salema school grazing": "ένα κοπάδι σάλπες που βόσκει",
   "a two-banded seabream": "ένα σαργό",
   "a white seabream": "μια μελανούρα",
   "a striped seabream": "μια μουρμούρα",
   "a painted comber sitting perfectly still": "μια πέρκα εντελώς ακίνητη",
-  "a buried weever (look carefully — only the eyes show)":
-    "μια θαμμένη δράκαινα (κοιτάξτε προσεκτικά — φαίνονται μόνο τα μάτια)",
+  "a buried weever (look carefully, only the eyes show)":
+    "μια θαμμένη δράκαινα (κοιτάξτε προσεκτικά, φαίνονται μόνο τα μάτια)",
   "a sea cucumber and the clean sand behind it":
     "ένα θαλάσσιο αγγούρι και την καθαρή άμμο που αφήνει πίσω του",
   "a sand smelt shoal turning together":
@@ -77,7 +77,7 @@ export const elSnorkel: Record<string, string> = {
   // --- Zone 4 ---
   "Zone 4": "ΖΩΝΗ 4",
   "Rocky Patches": "Βραχώδεις κηλίδες",
-  "3–7 m, scattered blocks and reef": "3–7 μ., διάσπαρτοι ογκόλιθοι και ύφαλος",
+  "3-7 m, scattered blocks and reef": "3-7 μ., διάσπαρτοι ογκόλιθοι και ύφαλος",
   "Every rock becomes interesting. Search the cracks rather than the open water.":
     "Κάθε βράχος κρύβει κάτι. Κοιτάξτε μέσα στις σχισμές και γύρω από τις προεξοχές, όχι μόνο στο ανοιχτό νερό.",
   "an octopus den": "μια φωλιά χταποδιού",
@@ -96,9 +96,9 @@ export const elSnorkel: Record<string, string> = {
   // --- Zone 5 ---
   "Zone 5": "ΖΩΝΗ 5",
   "The Underwater Forest": "Το υποβρύχιο δάσος",
-  "Posidonia meadow, 5–12 m": "Λιβάδι Ποσειδωνίας, 5–12 μ.",
-  "Slow down. Stop kicking. Let the meadow come alive around you — nothing here rewards speed.":
-    "Επιβραδύνετε. Σταματήστε για λίγο να χτυπάτε τα πέδιλα. Αφήστε το λιβάδι να ζωντανέψει γύρω σας — εδώ, όσο πιο αργά κινείστε, τόσο περισσότερα θα δείτε.",
+  "Posidonia meadow, 5-12 m": "Λιβάδι Ποσειδωνίας, 5-12 μ.",
+  "Slow down. Stop kicking. Let the meadow come alive around you, nothing here rewards speed.":
+    "Επιβραδύνετε. Σταματήστε για λίγο να χτυπάτε τα πέδιλα. Αφήστε το λιβάδι να ζωντανέψει γύρω σας, εδώ, όσο πιο αργά κινείστε, τόσο περισσότερα θα δείτε.",
   "salema grazing the leaves": "σάλπες που βόσκουν τα φύλλα",
   "a cuttlefish changing colour": "μια σουπιά που αλλάζει χρώμα",
   "a seahorse holding onto a blade": "ένα ιππόκαμπο γαντζωμένο σε ένα φύλλο",
@@ -158,7 +158,7 @@ export const elSnorkel: Record<string, string> = {
   // --- Tiers ---
   "Reward curiosity": "ΑΝΤΑΜΕΙΨΤΕ ΤΗΝ ΠΕΡΙΕΡΓΕΙΑ",
   "Three levels of attention": "Τρία επίπεδα παρατήρησης",
-  "Not a collection to complete. Three tiers of patience — most swimmers finish the first on their first morning, and the last is a matter of luck.":
+  "Not a collection to complete. Three tiers of patience, most swimmers finish the first on their first morning, and the last is a matter of luck.":
     "Δεν είναι λίστα που πρέπει να συμπληρώσετε. Είναι τρία επίπεδα παρατήρησης: το πρώτο είναι σχεδόν βέβαιο σε μια ήρεμη μέρα, το δεύτερο θέλει χρόνο και υπομονή, ενώ το τρίτο είναι καθαρά θέμα τύχης.",
   "First Snorkel": "Πρώτη βουτιά",
   "Almost certain on any calm day.": "Σχεδόν βέβαια σε κάθε ήρεμη μέρα.",
@@ -183,8 +183,8 @@ export const elSnorkel: Record<string, string> = {
   // --- iNaturalist block ---
   "Log what you saw": "ΚΑΤΑΓΡΑΨΤΕ ΟΣΑ ΕΙΔΑΤΕ",
   "Your swim can become a record": "Η παρατήρησή σας μπορεί να γίνει επιστημονική καταγραφή",
-  "Photograph anything you cannot name and upload it to iNaturalist — a free platform where naturalists help confirm identifications. Each verified photo turns a holiday sighting into an occurrence record for this stretch of coast.":
-    "Φωτογραφίστε ό,τι δεν μπορείτε να αναγνωρίσετε και ανεβάστε το στο iNaturalist — μια δωρεάν πλατφόρμα όπου η κοινότητα βοηθά στην ταυτοποίηση των ειδών. Κάθε επιβεβαιωμένη παρατήρηση μετατρέπει μια καλοκαιρινή συνάντηση σε χρήσιμη καταγραφή για αυτό το κομμάτι της ακτής.",
+  "Photograph anything you cannot name and upload it to iNaturalist, a free platform where naturalists help confirm identifications. Each verified photo turns a holiday sighting into an occurrence record for this stretch of coast.":
+    "Φωτογραφίστε ό,τι δεν μπορείτε να αναγνωρίσετε και ανεβάστε το στο iNaturalist, μια δωρεάν πλατφόρμα όπου η κοινότητα βοηθά στην ταυτοποίηση των ειδών. Κάθε επιβεβαιωμένη παρατήρηση μετατρέπει μια καλοκαιρινή συνάντηση σε χρήσιμη καταγραφή για αυτό το κομμάτι της ακτής.",
   "Open iNaturalist →": "Ανοίξτε το iNaturalist →",
 
   // --- Species card status ---

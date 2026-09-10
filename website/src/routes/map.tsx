@@ -8,9 +8,9 @@ import "mapbox-gl/dist/mapbox-gl.css";
 export const Route = createFileRoute("/map")({
   head: () => ({
     meta: [
-      { title: "Interactive Map — Kriopigi Shore Guide" },
-      { name: "description", content: "Spatial story of Kriopigi Beach — meadows, springs, and shorelines mapped along the Kassandra coast." },
-      { property: "og:title", content: "Interactive Map — Kriopigi Shore Guide" },
+      { title: "Interactive Map | Kriopigi Shore Guide" },
+      { name: "description", content: "Spatial story of Kriopigi Beach, meadows, springs, and shorelines mapped along the Kassandra coast." },
+      { property: "og:title", content: "Interactive Map | Kriopigi Shore Guide" },
       { property: "og:description", content: "A cinematic, mobile-first map of Kriopigi's habitats and history." },
     ],
   }),

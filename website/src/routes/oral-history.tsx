@@ -7,7 +7,7 @@ import { Camera } from "lucide-react";
 export const Route = createFileRoute("/oral-history")({
   head: () => ({
     meta: [
-      { title: "Voices & Images — Kriopigi Shore Guide" },
+      { title: "Voices & Images | Kriopigi Shore Guide" },
       { name: "description", content: "Recorded oral histories from locals and a community photo archive of the Kriopigi shore." },
     ],
   }),
@@ -17,7 +17,7 @@ export const Route = createFileRoute("/oral-history")({
 type Photo = { src: string; caption: string; author: string; origin: "local" | "visitor"; date: string };
 
 const photosRaw: Photo[] = [
-  { src: kriopigi1998, caption: "The shore in summer — beach was much wider then", author: "Anonymous", origin: "visitor", date: "1998-07-15" },
+  { src: kriopigi1998, caption: "The shore in summer, beach was much wider then", author: "Anonymous", origin: "visitor", date: "1998-07-15" },
 ];
 
 const photos = [...photosRaw].sort((a, b) => a.date.localeCompare(b.date));
@@ -38,7 +38,7 @@ function OralHistory() {
       <PageHeader
         eyebrow="Voices & Images"
         title="What locals remember"
-        lead="A community archive in two parts — recorded conversations with people who know this coast, and a slow-growing album of pictures sent in by locals and travellers."
+        lead="A community archive in two parts, recorded conversations with people who know this coast, and a slow-growing album of pictures sent in by locals and travellers."
       />
 
       <div className="px-5 max-w-3xl mx-auto">
@@ -69,7 +69,7 @@ function OralHistory() {
             <span className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("Part II")}</span>
           </div>
           <p className="text-muted-foreground mb-6 leading-relaxed">
-            {t("Pictures of the cove submitted by locals and visitors — the seasons, the weather, the small things worth pointing a camera at.")}
+            {t("Pictures of the cove submitted by locals and visitors, the seasons, the weather, the small things worth pointing a camera at.")}
           </p>
 
           <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-4">

@@ -16,7 +16,7 @@ import aegeanCirculation from "@/assets/aegean-circulation.png";
 export const Route = createFileRoute("/field-notes/geology")({
   head: () => ({
     meta: [
-      { title: "Geological & Natural History — Kriopigi Shore Guide" },
+      { title: "Geological & Natural History | Kriopigi Shore Guide" },
       { name: "description", content: "The deep-time formation of the Kriopigi cove: tectonics, limestone, springs, and the rise of its ecosystem." },
     ],
   }),
@@ -26,12 +26,12 @@ export const Route = createFileRoute("/field-notes/geology")({
 type Era = { age: string; title: string; body: string; image?: string; caption?: string; image2?: string; caption2?: string };
 
 const eras: Era[] = [
-  { age: "~250 Mya · Triassic", title: "An ancient ocean beneath future Kriopigi", body: "Beneath Kassandra lie much older rocks that formed in the warm Tethys Ocean during the Mesozoic Era. Marine sediments, volcanic rocks, and fragments of ancient oceanic crust were later caught up in the collision between Africa and Eurasia, becoming part of the geological basement beneath the peninsula. Today these rocks are exposed mainly in southern Kassandra and at depth beneath younger sediments.", image: triassicMap, caption: "Pangaea in the Triassic, with the Tethys Ocean opening to the east — the future Halkidiki lay along its northern shelf." },
-  { age: "~50 Mya · Eocene", title: "Building the Hellenides", body: "As the African Plate continued moving northward, it collided with Eurasia, compressing and uplifting the rocks that now form Greece. This mountain-building episode created the Hellenides and established the structural framework on which the Halkidiki peninsulas would later develop.", image: eoceneMap, caption: "Eocene world — Africa drifts north into Eurasia, closing the Tethys and crumpling the Hellenic arc into being." },
-  { age: "~10–5 Ma · Late Miocene", title: "The landscape beneath Kriopigi takes shape", body: "Rivers, lakes, floodplains and shallow coastal environments deposited thick layers of sand, gravel, clay, marl and limestone across what is now Kassandra. Around modern Kriopigi these Late Miocene sediments preserve fossil mammals and other terrestrial life, making the village itself part of the peninsula's paleontological record.", image: mioceneMap.url, caption: "Late Miocene world — rivers, lakes, and coastal plains spread across what is now Kassandra, depositing the sediments beneath modern Kriopigi." },
-  { age: "~5 Mya · Pliocene", title: "Sculpting the coast", body: "Continued uplift, faulting, changing sea levels, and erosion gradually sculpt the Kassandra peninsula. Streams cut valleys into the young sediments, waves carve pocket coves and low cliffs, and beaches shift as sand and gravel move along the shore. Rainwater infiltrating fractured bedrock and overlying sediments re-emerges locally as coastal springs — one of them giving Kriopigi (“cold spring”) its name.", image: plioceneMap, caption: "Late Pliocene world — continents approach their modern configuration as the Mediterranean nears its present geography and the landscape of Kassandra continues to evolve." },
-  { age: "~12,000 ya · Holocene", title: "The modern shoreline", body: "As glaciers melted after the last Ice Age, rising seas flooded the lower valleys and brought the coastline close to its modern position. Over the following millennia, Aleppo pine (Pinus halepensis) spread across the hillsides while extensive meadows of Posidonia oceanica became established on the shallow sandy shelf, stabilizing sediments and creating one of the Mediterranean’s most important marine habitats. By the late Holocene, the bay at Kriopigi had taken on much of the form visitors recognize today.", image: holoceneMap, caption: "Holocene world — rising seas reshape coastlines as the Mediterranean approaches its modern form." },
-  { age: "Today", title: "A living equilibrium", body: "The cold spring still surfaces beneath the sand, lowering nearshore temperatures by 2–3°C in summer — a microclimate that shelters juvenile fish and keeps the seagrass meadow productive.", image: greeceGeoMap, caption: "Simplified geological map of Greece (modified after IGME, 1983 and Zachariadis, 2007). Kassandra-Sithonia (K-S) marks the Halkidiki peninsulas.", image2: halkidikiGeoMap, caption2: "Geological map of the Halkidiki peninsula and the Serbo-Macedonian Massif (modified after Melfos & Voudouris, 2012; Schmid et al., 2008; van Hinsbergen & Schmid, 2012). Source: ScienceDirect, S0169136822000221." },
+  { age: "~250 Mya · Triassic", title: "An ancient ocean beneath future Kriopigi", body: "Beneath Kassandra lie much older rocks that formed in the warm Tethys Ocean during the Mesozoic Era. Marine sediments, volcanic rocks, and fragments of ancient oceanic crust were later caught up in the collision between Africa and Eurasia, becoming part of the geological basement beneath the peninsula. Today these rocks are exposed mainly in southern Kassandra and at depth beneath younger sediments.", image: triassicMap, caption: "Pangaea in the Triassic, with the Tethys Ocean opening to the east, the future Halkidiki lay along its northern shelf." },
+  { age: "~50 Mya · Eocene", title: "Building the Hellenides", body: "As the African Plate continued moving northward, it collided with Eurasia, compressing and uplifting the rocks that now form Greece. This mountain-building episode created the Hellenides and established the structural framework on which the Halkidiki peninsulas would later develop.", image: eoceneMap, caption: "Eocene world, Africa drifts north into Eurasia, closing the Tethys and crumpling the Hellenic arc into being." },
+  { age: "~10-5 Ma · Late Miocene", title: "The landscape beneath Kriopigi takes shape", body: "Rivers, lakes, floodplains and shallow coastal environments deposited thick layers of sand, gravel, clay, marl and limestone across what is now Kassandra. Around modern Kriopigi these Late Miocene sediments preserve fossil mammals and other terrestrial life, making the village itself part of the peninsula's paleontological record.", image: mioceneMap.url, caption: "Late Miocene world, rivers, lakes, and coastal plains spread across what is now Kassandra, depositing the sediments beneath modern Kriopigi." },
+  { age: "~5 Mya · Pliocene", title: "Sculpting the coast", body: "Continued uplift, faulting, changing sea levels, and erosion gradually sculpt the Kassandra peninsula. Streams cut valleys into the young sediments, waves carve pocket coves and low cliffs, and beaches shift as sand and gravel move along the shore. Rainwater infiltrating fractured bedrock and overlying sediments re-emerges locally as coastal springs, one of them giving Kriopigi ('cold spring') its name.", image: plioceneMap, caption: "Late Pliocene world, continents approach their modern configuration as the Mediterranean nears its present geography and the landscape of Kassandra continues to evolve." },
+  { age: "~12,000 ya · Holocene", title: "The modern shoreline", body: "As glaciers melted after the last Ice Age, rising seas flooded the lower valleys and brought the coastline close to its modern position. Over the following millennia, Aleppo pine (Pinus halepensis) spread across the hillsides while extensive meadows of Posidonia oceanica became established on the shallow sandy shelf, stabilizing sediments and creating one of the Mediterranean's most important marine habitats. By the late Holocene, the bay at Kriopigi had taken on much of the form visitors recognize today.", image: holoceneMap, caption: "Holocene world, rising seas reshape coastlines as the Mediterranean approaches its modern form." },
+  { age: "Today", title: "A living equilibrium", body: "The cold spring still surfaces beneath the sand, lowering nearshore temperatures by 2-3°C in summer, a microclimate that shelters juvenile fish and keeps the seagrass meadow productive.", image: greeceGeoMap, caption: "Simplified geological map of Greece (modified after IGME, 1983 and Zachariadis, 2007). Kassandra-Sithonia (K-S) marks the Halkidiki peninsulas.", image2: halkidikiGeoMap, caption2: "Geological map of the Halkidiki peninsula and the Serbo-Macedonian Massif (modified after Melfos & Voudouris, 2012; Schmid et al., 2008; van Hinsbergen & Schmid, 2012). Source: ScienceDirect, S0169136822000221." },
 ];
 
 function Geology() {
@@ -49,12 +49,12 @@ function Geology() {
           <h1 className="font-serif text-4xl text-primary-foreground">{t("Geological & Natural History")}</h1>
         </div>
       </div>
-      <PageHeader eyebrow="Formation" title="How the cove was made" lead="Read downward through time — from a Triassic sea bed to the cold spring that still feeds the bay." />
+      <PageHeader eyebrow="Formation" title="How the cove was made" lead="Read downward through time, from a Triassic sea bed to the cold spring that still feeds the bay." />
       <div className="px-5 max-w-5xl mx-auto pb-8 grid lg:grid-cols-[260px_1fr] gap-8">
         <aside className="lg:sticky lg:top-20 lg:self-start">
           <figure className="rounded-lg overflow-hidden border border-border bg-card shadow-soft">
             <img src={timeScale} alt={t("Geologic time scale, 650 million years ago to the present")} className="w-full h-auto" />
-            <figcaption className="px-3 py-2 text-[11px] text-muted-foreground leading-snug">{t("Geologic time scale — 650 Mya to present. © Encyclopædia Britannica.")}</figcaption>
+            <figcaption className="px-3 py-2 text-[11px] text-muted-foreground leading-snug">{t("Geologic time scale, 650 Mya to present. © Encyclopædia Britannica.")}</figcaption>
           </figure>
         </aside>
         <div className="space-y-6 max-w-2xl">
@@ -85,7 +85,7 @@ function Geology() {
                   <div>
                     <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("Reading the maps")}</p>
                     <h3 className="mt-1 font-serif text-xl text-foreground">{t("The deep story beneath Kassandra")}</h3>
-                    <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">{t("The colored zones above are not decoration — they represent different tectonic terranes: fragments of crust with separate geological origins that were compressed and welded together over hundreds of millions of years during the formation of the Hellenides, Greece’s mountain system. The Halkidiki peninsulas occupy the southern margin of this tectonic collage, shaped by continental collision, mountain building, uplift, faulting, the closure of the ancient Tethys Ocean, and millions of years of erosion. The landscape you walk through today is the surface expression of that deep geological history.")}</p>
+                    <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">{t("The colored zones above are not decoration, they represent different tectonic terranes: fragments of crust with separate geological origins that were compressed and welded together over hundreds of millions of years during the formation of the Hellenides, Greece's mountain system. The Halkidiki peninsulas occupy the southern margin of this tectonic collage, shaped by continental collision, mountain building, uplift, faulting, the closure of the ancient Tethys Ocean, and millions of years of erosion. The landscape you walk through today is the surface expression of that deep geological history.")}</p>
                   </div>
 
                   <div className="rounded-xl border border-border bg-card p-5 shadow-soft space-y-5">
@@ -108,19 +108,19 @@ function Geology() {
 
                     <div>
                       <h4 className="font-serif text-lg text-foreground">{t("4. Why there are springs and cold-water pockets")}</h4>
-                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Faults, fractures, and permeable sedimentary layers channel groundwater through the peninsula. Rainwater infiltrates the subsurface and re-emerges as coastal springs, seepage zones, and localized cold-water upwellings, creating small-scale differences in temperature, salinity, nutrients, fish distribution, and seagrass productivity. Kriopigi — “the cold spring” — takes its name from one of these freshwater sources.")}</p>
+                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Faults, fractures, and permeable sedimentary layers channel groundwater through the peninsula. Rainwater infiltrates the subsurface and re-emerges as coastal springs, seepage zones, and localized cold-water upwellings, creating small-scale differences in temperature, salinity, nutrients, fish distribution, and seagrass productivity. Kriopigi, 'the cold spring', takes its name from one of these freshwater sources.")}</p>
                     </div>
 
                     <div>
                       <h4 className="font-serif text-lg text-foreground">{t("5. Why the beaches alternate between sand, pebbles, and rock")}</h4>
-                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Different rock types and sedimentary deposits erode at different rates. Within a few hundred metres the coast can shift through rocky shelves, pocket coves, coarse gravel beaches, sandy sections, cliffs, and submerged reefs — each one a readout of the rock beneath, the wave exposure above, and the sediment supply between.")}</p>
+                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Different rock types and sedimentary deposits erode at different rates. Within a few hundred metres the coast can shift through rocky shelves, pocket coves, coarse gravel beaches, sandy sections, cliffs, and submerged reefs, each one a readout of the rock beneath, the wave exposure above, and the sediment supply between.")}</p>
                     </div>
                   </div>
 
                   <div className="rounded-xl bg-gradient-sea p-5 text-primary-foreground shadow-deep">
                     <p className="text-[10px] uppercase tracking-[0.25em] opacity-80">{t("The bigger idea")}</p>
                     <h3 className="mt-1 font-serif text-xl">{t("Ecology begins with geology")}</h3>
-                    <p className="mt-2 text-sm opacity-90 leading-relaxed">{t("The forests, shrubs, springs, beach types, erosion patterns, water clarity, and marine habitats around Kriopigi all arise from the same fundamental processes: geology, tectonics, climate, water movement, and time. Read the coast that way and it stops being scenery — it becomes a system.")}</p>
+                    <p className="mt-2 text-sm opacity-90 leading-relaxed">{t("The forests, shrubs, springs, beach types, erosion patterns, water clarity, and marine habitats around Kriopigi all arise from the same fundamental processes: geology, tectonics, climate, water movement, and time. Read the coast that way and it stops being scenery, it becomes a system.")}</p>
                   </div>
                 </div>
               )}
@@ -149,7 +149,7 @@ function Geology() {
             hash="first-settlers"
             className="mt-4 block text-center text-[12px] uppercase tracking-[0.2em] text-muted-foreground hover:text-accent transition-colors"
           >
-            <span className="normal-case tracking-normal italic">{t("…or wanna wade out? Stay shallow with the humans →")}</span>
+            <span className="normal-case tracking-normal italic">{t("...or wanna wade out? Stay shallow with the humans →")}</span>
           </Link>
         </div>
       </div>

@@ -7,7 +7,7 @@ import { Camera, MapPin, Send } from "lucide-react";
 export const Route = createFileRoute("/submit")({
   head: () => ({
     meta: [
-      { title: "Submit an Observation — Kriopigi Shore Guide" },
+      { title: "Submit an Observation | Kriopigi Shore Guide" },
       { name: "description", content: "Share what you saw at Kriopigi: species, weather, debris, anything worth recording." },
     ],
   }),
@@ -20,7 +20,7 @@ function Submit() {
 
   return (
     <SiteLayout>
-      <PageHeader eyebrow="Citizen science" title="Add to the record" lead="What did you see? Even small notes — a jellyfish bloom, an unusual bird — become part of the long memory of the bay." />
+      <PageHeader eyebrow="Citizen science" title="Add to the record" lead="What did you see? Even small notes, a jellyfish bloom, an unusual bird, become part of the long memory of the bay." />
       <div className="px-5 max-w-2xl mx-auto">
         {sent ? (
           <div className="rounded-2xl bg-gradient-sea text-primary-foreground p-8 text-center shadow-deep">
@@ -50,7 +50,7 @@ function Submit() {
               </Field>
             </div>
             <Field label="Notes">
-              <textarea rows={4} className="w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm resize-none" placeholder={t("Time of day, weather, behavior, count…")} />
+              <textarea rows={4} className="w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm resize-none" placeholder={t("Time of day, weather, behavior, count...")} />
             </Field>
             <button type="button" className="w-full inline-flex items-center justify-center gap-2 rounded-md border border-dashed border-border py-3 text-sm text-muted-foreground hover:text-foreground hover:border-accent transition">
               <Camera size={16} /> {t("Attach a photo (optional)")}

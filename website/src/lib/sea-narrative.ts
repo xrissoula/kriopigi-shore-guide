@@ -2,7 +2,7 @@ import type { SeaConditions } from "./sea.functions";
 
 /**
  * Ecological inference layer. Every sentence is a cautious likelihood
- * statement derived from measured sea state, temperature and season —
+ * statement derived from measured sea state, temperature and season -
  * never a claim that an animal has been seen.
  */
 
@@ -17,7 +17,7 @@ export function seasonOf(date: Date): Season {
 }
 
 export const compass = (deg: number | null): string => {
-  if (deg == null) return "—";
+  if (deg == null) return " - ";
   const points = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
   return points[Math.round(deg / 22.5) % 16];
 };

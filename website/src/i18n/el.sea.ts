@@ -38,8 +38,8 @@ export const elSea: Record<string, string> = {
     "Ο χειμώνας φέρνει τραχύτερη θάλασσα και κρύο νερό, οπότε οι ευκαιρίες για κατάδυση με αναπνευστήρα είναι λίγες· η γραμμή των εκβρασμάτων μετά από καταιγίδα είναι συχνά το πιο ενδιαφέρον «κείμενο».",
   "Early morning and late afternoon generally offer the calmest water and the best chance of seeing octopus near rocky crevices.":
     "Το πρώτο πρωινό και το απόγευμα προσφέρουν γενικά το πιο ήρεμο νερό και τις καλύτερες πιθανότητες να δείτε χταπόδι κοντά σε βραχώδεις σχισμές.",
-  "Inferred from today's sea state, water temperature and season — a statement of likelihood, not a record of sightings.":
-    "Συνάγεται από την κατάσταση της θάλασσας, τη θερμοκρασία του νερού και την εποχή — αποτελεί εκτίμηση πιθανότητας, όχι καταγραφή παρατηρήσεων.",
+  "Inferred from today's sea state, water temperature and season, a statement of likelihood, not a record of sightings.":
+    "Συνάγεται από την κατάσταση της θάλασσας, τη θερμοκρασία του νερού και την εποχή, αποτελεί εκτίμηση πιθανότητας, όχι καταγραφή παρατηρήσεων.",
 
   // --- Conditions cards ---
   "Marine conditions": "Θαλάσσιες συνθήκες",
@@ -87,8 +87,8 @@ export const elSea: Record<string, string> = {
 
   // --- Likely species ---
   "Species most likely today": "Είδη με τις περισσότερες πιθανότητες σήμερα",
-  "Likelihood suggestions drawn from the species already documented in the Flora & Fauna guide — not sightings.":
-    "Εκτιμήσεις πιθανότητας που βασίζονται στα είδη που έχουν τεκμηριωθεί στον οδηγό Χλωρίδας & Πανίδας — όχι καταγεγραμμένες παρατηρήσεις.",
+  "Likelihood suggestions drawn from the species already documented in the Flora & Fauna guide, not sightings.":
+    "Εκτιμήσεις πιθανότητας που βασίζονται στα είδη που έχουν τεκμηριωθεί στον οδηγό Χλωρίδας & Πανίδας, όχι καταγεγραμμένες παρατηρήσεις.",
   "Grazing schools are often easiest to observe in calm water over the Posidonia meadow.":
     "Τα κοπάδια που βόσκουν παρατηρούνται ευκολότερα σε ήρεμο νερό πάνω από το λιβάδι της Ποσειδωνίας.",
   "Early morning offers the best chance of seeing individuals near rocky crevices.":
@@ -108,8 +108,8 @@ export const elSea: Record<string, string> = {
 
   // --- Sightings ---
   "Recent local sightings": "Πρόσφατες τοπικές παρατηρήσεις",
-  "Verified observations from the shore will appear here — each marked ✓ Confirmed on iNaturalist, with photograph, species and observation date — once the iNaturalist feed for Kriopigi is connected.":
-    "Επιβεβαιωμένες παρατηρήσεις από την ακτή θα εμφανίζονται εδώ — με σήμανση ✓ Επιβεβαιωμένο στο iNaturalist, φωτογραφία, είδος και ημερομηνία — μόλις συνδεθεί η ροή του iNaturalist για την Κρυοπηγή.",
+  "Verified observations from the shore will appear here, each marked ✓ Confirmed on iNaturalist, with photograph, species and observation date, once the iNaturalist feed for Kriopigi is connected.":
+    "Επιβεβαιωμένες παρατηρήσεις από την ακτή θα εμφανίζονται εδώ, με σήμανση ✓ Επιβεβαιωμένο στο iNaturalist, φωτογραφία, είδος και ημερομηνία, μόλις συνδεθεί η ροή του iNaturalist για την Κρυοπηγή.",
 
   // --- Forecast ---
   "Five-day outlook": "Πρόγνωση πέντε ημερών",

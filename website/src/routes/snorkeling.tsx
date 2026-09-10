@@ -7,13 +7,13 @@ import posidonia from "@/assets/posidonia.jpg";
 export const Route = createFileRoute("/snorkeling")({
   head: () => ({
     meta: [
-      { title: "Snorkel Journey — Kriopigi Shore Guide" },
+      { title: "Snorkel Journey | Kriopigi Shore Guide" },
       {
         name: "description",
         content:
           "Swim out from the beach and watch the ecosystem change beneath you: six zones from the strand line to blue water, with things to look for in each.",
       },
-      { property: "og:title", content: "Snorkel Journey — Kriopigi Shore Guide" },
+      { property: "og:title", content: "Snorkel Journey | Kriopigi Shore Guide" },
       {
         property: "og:description",
         content: "A continuous underwater scavenger hunt at Kriopigi, from ghost crab burrows to the Posidonia forest and open blue.",
@@ -78,14 +78,14 @@ const zones: Zone[] = [
     eyebrow: "Zone 3",
     title: "Sandy Bottom",
     depth: "2\u20135 m below you",
-    lead: "Now you are floating. This is where you start slowing down — the sand looks blank until you give it time.",
+    lead: "Now you are floating. This is where you start slowing down, the sand looks blank until you give it time.",
     hunt: [
       "a salema school grazing",
       "a two-banded seabream",
       "a white seabream",
       "a striped seabream",
       "a painted comber sitting perfectly still",
-      "a buried weever (look carefully — only the eyes show)",
+      "a buried weever (look carefully, only the eyes show)",
       "a sea cucumber and the clean sand behind it",
       "a sand smelt shoal turning together",
     ],
@@ -114,7 +114,7 @@ const zones: Zone[] = [
     eyebrow: "Zone 5",
     title: "The Underwater Forest",
     depth: "Posidonia meadow, 5\u201312 m",
-    lead: "Slow down. Stop kicking. Let the meadow come alive around you — nothing here rewards speed.",
+    lead: "Slow down. Stop kicking. Let the meadow come alive around you, nothing here rewards speed.",
     hunt: [
       "salema grazing the leaves",
       "a cuttlefish changing colour",
@@ -353,7 +353,7 @@ function Snorkeling() {
         <p className="text-[11px] uppercase tracking-[0.25em] text-accent font-medium">{t("Reward curiosity")}</p>
         <h2 className="mt-2 font-serif text-3xl text-foreground">{t("Three levels of attention")}</h2>
         <p className="mt-3 text-muted-foreground leading-relaxed">
-          {t("Not a collection to complete. Three tiers of patience — most swimmers finish the first on their first morning, and the last is a matter of luck.")}
+          {t("Not a collection to complete. Three tiers of patience, most swimmers finish the first on their first morning, and the last is a matter of luck.")}
         </p>
         <div className="mt-6 grid gap-4 sm:grid-cols-3">
           {tiers.map((tier) => (
@@ -378,7 +378,7 @@ function Snorkeling() {
           <p className="text-[11px] uppercase tracking-[0.2em] text-accent">{t("Log what you saw")}</p>
           <h2 className="mt-2 font-serif text-2xl text-foreground">{t("Your swim can become a record")}</h2>
           <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-            {t("Photograph anything you cannot name and upload it to iNaturalist — a free platform where naturalists help confirm identifications. Each verified photo turns a holiday sighting into an occurrence record for this stretch of coast.")}
+            {t("Photograph anything you cannot name and upload it to iNaturalist, a free platform where naturalists help confirm identifications. Each verified photo turns a holiday sighting into an occurrence record for this stretch of coast.")}
           </p>
           <a
             href="https://www.inaturalist.org/"

@@ -26,13 +26,13 @@ export const elFlora: Record<string, string> = {
   "Maquis underneath": "Ο μακί κάτω από τα πεύκα",
   "Dense understory": "Πυκνός υποόροφος",
   "Maquis flanking a path down to the cove.": "Μακί που πλαισιώνει το μονοπάτι προς τον όρμο.",
-  "Beneath the pines grows dense evergreen maquis — a tangle of kermes oak, lentisk, strawberry tree, wild olive, myrtle, rosemary, sage and thyme. These aromatic shrubs form one of the characteristic ecosystems of the Mediterranean Basin and provide shelter and food for countless insects, reptiles and birds.":
-    "Κάτω από τα πεύκα αναπτύσσεται πυκνός αειθαλής μακί — ένα πυκνό πλέγμα από πουρνάρια, σχίνους, κουμαριές, αγριελιές, μυρτιές, δεντρολίβανο, φασκόμηλο και θυμάρι. Αυτοί οι αρωματικοί θάμνοι αποτελούν ένα από τα πιο χαρακτηριστικά οικοσυστήματα της λεκάνης της Μεσογείου και προσφέρουν καταφύγιο και τροφή σε αναρίθμητα έντομα, ερπετά και πτηνά.",
+  "Beneath the pines grows dense evergreen maquis, a tangle of kermes oak, lentisk, strawberry tree, wild olive, myrtle, rosemary, sage and thyme. These aromatic shrubs form one of the characteristic ecosystems of the Mediterranean Basin and provide shelter and food for countless insects, reptiles and birds.":
+    "Κάτω από τα πεύκα αναπτύσσεται πυκνός αειθαλής μακί, ένα πυκνό πλέγμα από πουρνάρια, σχίνους, κουμαριές, αγριελιές, μυρτιές, δεντρολίβανο, φασκόμηλο και θυμάρι. Αυτοί οι αρωματικοί θάμνοι αποτελούν ένα από τα πιο χαρακτηριστικά οικοσυστήματα της λεκάνης της Μεσογείου και προσφέρουν καταφύγιο και τροφή σε αναρίθμητα έντομα, ερπετά και πτηνά.",
 
   "Phrygana on the dry edges": "Τα φρύγανα στις ξηρές παρυφές",
   "Degraded / exposed dry edge ecology": "Ξηρά και εκτεθειμένα οικοσυστήματα παρυφών",
-  "Phrygana scrub and a seasonal erosion channel above the shore—typical habitat for Boettger’s tortoise (Testudo hermanni boettgeri), which is occasionally encountered in these dry, open Mediterranean slopes.":
-    "Φρυγανική βλάστηση και ένα εποχικό ρέμα διάβρωσης πάνω από την ακτή — χαρακτηριστικό ενδιαίτημα της χερσαίας χελώνας του Μπότγκερ (Testudo hermanni boettgeri).",
+  "Phrygana scrub and a seasonal erosion channel above the shore, typical habitat for Boettger's tortoise (Testudo hermanni boettgeri), which is occasionally encountered in these dry, open Mediterranean slopes.":
+    "Φρυγανική βλάστηση και ένα εποχικό ρέμα διάβρωσης πάνω από την ακτή, χαρακτηριστικό ενδιαίτημα της χερσαίας χελώνας του Μπότγκερ (Testudo hermanni boettgeri).",
   "Dry-edge phrygana habitat above Kriopigi: thin rocky soil, sparse drought-adapted scrub, and a small erosional drainage cut beside a dirt track.":
     "Φρυγανότοπος στις ξηρές παρυφές πάνω από την Κρυοπηγή: λεπτό βραχώδες έδαφος, αραιοί ξηροθερμικοί θάμνοι και ένα μικρό αυλάκι διάβρωσης δίπλα σε χωματόδρομο.",
   "Where soils are shallower, conditions drier and more exposed, or where repeated fire and grazing maintain a lower shrub community, maquis gives way to phrygana. Phrygana is a natural and widespread Mediterranean ecosystem of low, aromatic, often thorny shrubs; human activity often expands or maintains it, but it is not simply degraded maquis. On the dry slopes above Kriopigi, it forms an important transition zone between forest and open coast.":
@@ -42,7 +42,7 @@ export const elFlora: Record<string, string> = {
   "Rocky ledges, tide pools and small pocket beaches create dozens of microhabitats. Crevices provide shelter from waves and predators, while algae, encrusting organisms and accumulated wrack support diverse communities of molluscs, crustaceans, fishes and other marine life.":
     "Βραχώδεις εξάρσεις, φυσικές λεκάνες και μικροί κόλποι αμμου δημιουργούν δεκάδες μικροενδιαιτήματα για πλήθος οργανισμών. Οι σχισμές προσφέρουν προστασία από τα κύματα και τους θηρευτές, ενώ τα φύκια, οι οργανισμοί που προσκολλώνται στους βράχους και τα συσσωρευμένα ξεβρασμένα φύκια στηρίζουν ποικίλες κοινότητες μαλακίων, καρκινοειδών, ψαριών και άλλων θαλάσσιων οργανισμών.",
   "Posidonia meadow offshore": "Το λιβάδι της Ποσειδωνίας στα ανοιχτά",
-  "Underwater, the keystone habitat is the Posidonia oceanica meadow. This is not seaweed — it is a true marine flowering plant endemic to the Mediterranean. Its meadows stabilise sediments, improve water clarity, store large amounts of carbon, and provide habitat and refuge for countless marine organisms. They are among the Mediterranean's most important coastal habitats, supporting many juvenile fishes and invertebrates.":
+  "Underwater, the keystone habitat is the Posidonia oceanica meadow. This is not seaweed, it is a true marine flowering plant endemic to the Mediterranean. Its meadows stabilise sediments, improve water clarity, store large amounts of carbon, and provide habitat and refuge for countless marine organisms. They are among the Mediterranean's most important coastal habitats, supporting many juvenile fishes and invertebrates.":
     "Κάτω από την επιφάνεια, το κλειδικό ενδιαίτημα είναι το λιβάδι της Ποσειδωνίας (Posidonia oceanica). Δεν πρόκειται για φύκι, αλλά για ένα αληθινό θαλάσσιο ανθοφόρο φυτό, ενδημικό της Μεσογείου. Τα λιβάδια της σταθεροποιούν τα ιζήματα, βελτιώνουν τη διαύγεια του νερού, δεσμεύουν μεγάλες ποσότητες άνθρακα και παρέχουν ενδιαίτημα και καταφύγιο σε αμέτρητους θαλάσσιους οργανισμούς. Θεωρούνται από τα σημαντικότερα παράκτια οικοσυστήματα της Μεσογείου, στηρίζοντας πολλά νεαρά ψάρια και ασπόνδυλα.",
 
   "Why is biodiversity so high here?": "Γιατί είναι τόσο υψηλή η βιοποικιλότητα εδώ;",
@@ -64,14 +64,14 @@ export const elFlora: Record<string, string> = {
   "Beach & Wash Zone": "Παραλία & Ζώνη Κυματισμού",
   "Shallow Water": "Ρηχά Νερά",
   "Above the high tide line": "Πάνω από τη γραμμή της πλημμυρίδας",
-  "The terrestrial fringe — sand-binding plants and the Aleppo pine canopy that shades the shore.":
-    "Το χερσαίο όριο της ακτής — φυτά που συγκρατούν την άμμο και το πευκοδάσος που χαρίζει σκιά στην παραλία.",
-  "The wet sand and breaking surf — turnover habitat for crabs, isopods, and shorebirds.":
-    "Η υγρή άμμος και η ζώνη όπου σκάει το κύμα — ένα διαρκώς μεταβαλλόμενο ενδιαίτημα για καβούρια, ισόποδα και παρυδάτια πουλιά.",
-  "Sun-warmed sand and rocky patches — nursery ground for juveniles and the inner edge of the seagrass meadow.":
-    "Ζεστός αμμώδης βυθός και βραχώδεις κηλίδες — φυτώριο για νεαρά ψάρια και το εσωτερικό όριο του λιβαδιού της Ποσειδωνίας.",
-  "The Mediterranean's lungs — endemic seagrass beds that oxygenate the bay and shelter its biodiversity.":
-    "Η Μεσόγειος αναπνέει εδώ — τα ενδημικά λιβάδια της Ποσειδωνίας οξυγονώνουν τον όρμο και στηρίζουν ολόκληρη τη βιοποικιλότητά του.",
+  "The terrestrial fringe, sand-binding plants and the Aleppo pine canopy that shades the shore.":
+    "Το χερσαίο όριο της ακτής, φυτά που συγκρατούν την άμμο και το πευκοδάσος που χαρίζει σκιά στην παραλία.",
+  "The wet sand and breaking surf, turnover habitat for crabs, isopods, and shorebirds.":
+    "Η υγρή άμμος και η ζώνη όπου σκάει το κύμα, ένα διαρκώς μεταβαλλόμενο ενδιαίτημα για καβούρια, ισόποδα και παρυδάτια πουλιά.",
+  "Sun-warmed sand and rocky patches, nursery ground for juveniles and the inner edge of the seagrass meadow.":
+    "Ζεστός αμμώδης βυθός και βραχώδεις κηλίδες, φυτώριο για νεαρά ψάρια και το εσωτερικό όριο του λιβαδιού της Ποσειδωνίας.",
+  "The Mediterranean's lungs, endemic seagrass beds that oxygenate the bay and shelter its biodiversity.":
+    "Η Μεσόγειος αναπνέει εδώ, τα ενδημικά λιβάδια της Ποσειδωνίας οξυγονώνουν τον όρμο και στηρίζουν ολόκληρη τη βιοποικιλότητά του.",
 
   // --- Species ---
   "Aleppo pine": "Χαλέπιος πεύκη",
@@ -154,7 +154,7 @@ export const elFlora: Record<string, string> = {
   "Recognizable by two bold black bands; juveniles gather around rocks and seagrass.":
     "Σαργός που ξεχωρίζει από τις δύο χαρακτηριστικές μαύρες ζώνες του· τα νεαρά άτομα συναθροίζονται γύρω από βράχια και Ποσειδωνία.",
   "Salema": "Σάλπα",
-  "Herbivorous schools graze algae and seagrass leaves along the meadow’s edge.":
+  "Herbivorous schools graze algae and seagrass leaves along the meadow's edge.":
     "Βοσκόψαρο που κινείται σε μεγάλα κοπάδια και βόσκει φύκια και φύλλα Ποσειδωνίας στα όρια του λιβαδιού.",
   "European seabass": "Λαβράκι",
   "Streamlined predator that cruises shallow coastal water, often near rocks and sandy edges.":
@@ -192,7 +192,7 @@ export const elFlora: Record<string, string> = {
   "A true flowering plant that forms long-lived underwater meadows supporting diverse Mediterranean marine life.":
     "Ένα αληθινό ανθοφόρο φυτό που σχηματίζει μακρόβια υποθαλάσσια λιβάδια, στηρίζοντας πλούσια μεσογειακή θαλάσσια ζωή.",
   "Noble pen shell": "Πίνα",
-  "The Mediterranean’s largest bivalve; now critically endangered and fully protected.":
+  "The Mediterranean's largest bivalve; now critically endangered and fully protected.":
     "Κρισίμως κινδυνεύον ενδημικό δίθυρο της Μεσογείου, σήμερα αυστηρά προστατευόμενο.",
   "Common octopus": "Κοινό χταπόδι",
   "Empty shells piled outside a rocky crevice often reveal an occupied den.":
@@ -220,13 +220,13 @@ export const elFlora: Record<string, string> = {
   // --- Plankton & open water ---
   "Plankton & Open Water": "Πλαγκτόν & Ανοιχτά Νερά",
   "Sea sparkle": "Θαλάσσια λάμψη",
-  "A single-celled planktonic dinoflagellate — neither animal nor plant — whose blooms can produce blue bioluminescent flashes when the water is disturbed at night.":
-    "Ένα μονοκύτταρο πλαγκτονικό δινομαστιγωτό — ούτε ζώο ούτε φυτό — του οποίου οι εκρήξεις πληθυσμού μπορούν να δημιουργήσουν γαλάζιες βιοφωταυγείς αναλαμπές όταν το νερό ταράζεται τη νύχτα.",
+  "A single-celled planktonic dinoflagellate, neither animal nor plant, whose blooms can produce blue bioluminescent flashes when the water is disturbed at night.":
+    "Ένα μονοκύτταρο πλαγκτονικό δινομαστιγωτό, ούτε ζώο ούτε φυτό, του οποίου οι εκρήξεις πληθυσμού μπορούν να δημιουργήσουν γαλάζιες βιοφωταυγείς αναλαμπές όταν το νερό ταράζεται τη νύχτα.",
 
   // --- Zone 5 ---
   "Deep Water & Offshore": "Βαθιά Νερά & Ανοιχτό Πέλαγος",
   "15 m and beyond": "15 μ. και βαθύτερα",
-  "Beyond the meadow's outer edge — coralligenous reefs, pelagic visitors, and migratory megafauna.":
+  "Beyond the meadow's outer edge, coralligenous reefs, pelagic visitors, and migratory megafauna.":
     "Πέρα από το εξωτερικό όριο του λιβαδιού της Ποσειδωνίας εκτείνονται οι κοραλλιγενείς ύφαλοι, τα πελαγικά είδη που επισκέπτονται την περιοχή και η μεταναστευτική θαλάσσια μεγαπανίδα.",
   "Loggerhead sea turtle": "Χελώνα καρέτα",
   "Wide-ranging marine turtle that may pass through northern Aegean coastal and offshore waters.":

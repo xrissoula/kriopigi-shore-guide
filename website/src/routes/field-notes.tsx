@@ -9,7 +9,7 @@ import hero from "@/assets/hero-kriopigi.webp";
 export const Route = createFileRoute("/field-notes")({
   head: () => ({
     meta: [
-      { title: "Field Notes — Kriopigi Shore Guide" },
+      { title: "Field Notes | Kriopigi Shore Guide" },
       { name: "description", content: "A chronological field guide to Kriopigi: geology, human history, and the living shore." },
     ],
   }),
@@ -37,7 +37,7 @@ const sections = [
     to: "/flora-fauna" as const,
     eyebrow: "III · Living Shore",
     title: "Flora & Fauna",
-    desc: "A field catalogue from the dune line outward — beach, surf, shallows, and deep water.",
+    desc: "A field catalogue from the dune line outward, beach, surf, shallows, and deep water.",
     image: posidonia,
     icon: Leaf,
   },

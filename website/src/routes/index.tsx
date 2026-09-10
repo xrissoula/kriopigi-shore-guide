@@ -11,7 +11,7 @@ import { ArrowRight, Map, Leaf, Waves, Shield } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Kriopigi Shore Guide — A Field Guide to a Halkidiki Coast" },
+      { title: "Kriopigi Shore Guide, A Field Guide to a Halkidiki Coast" },
       { name: "description", content: "An interactive field guide to Kriopigi Beach: maps, species, oral histories, snorkeling, and conservation in Halkidiki, Greece." },
       { property: "og:title", content: "Kriopigi Shore Guide" },
       { property: "og:description", content: "Place-based environmental storytelling on the Kassandra coast." },
@@ -34,7 +34,7 @@ function Index() {
             {t("A field guide to the")} <em className="text-accent not-italic">{t("Kriopigi shore")}</em>.
           </h1>
           <p className="mt-4 text-primary-foreground/85 text-base md:text-lg max-w-md leading-relaxed">
-            {t("Walk the cove with us — through species, stories, and the slow language of the Aegean.")}
+            {t("Walk the beach with us through species, stories, and the slow language of the Aegean.")}
           </p>
           <Link to="/map" className="mt-6 inline-flex items-center gap-2 rounded-full bg-accent text-accent-foreground px-5 py-3 text-sm font-medium shadow-deep hover:opacity-90 transition">
             {t("Open the map")} <ArrowRight size={16} />
@@ -49,7 +49,7 @@ function Index() {
           {t("Where pine forest meets a wine-dark sea.")}
         </h2>
         <p className="mt-4 text-muted-foreground leading-relaxed">
-          {t("Kriopigi — \"cold spring\" — sits on the eastern Kassandra coast, on the Toronean Gulf, a crescent of fine sand under Aleppo pines, looking out over what Homer called the oînops póntos, the wine-dark sea. This guide gathers what locals, scientists, and travelers have learned of its tides, meadows, and migrants.")}
+          {t("Kriopigi, \"cold spring\", sits on the eastern Kassandra coast, on the Toronean Gulf, a crescent of fine sand under Aleppo pines, looking out over what Homer called the oînops póntos, the wine-dark sea. This guide gathers what locals, scientists, and travelers have learned of its tides, meadows, and migrants.")}
         </p>
       </section>
 
@@ -57,8 +57,8 @@ function Index() {
       <section className="px-5 pb-16 max-w-5xl mx-auto grid gap-4 sm:grid-cols-2">
         <FeatureCard to="/map" image={kassandraMap} icon={<Map size={18} />} title="Interactive Map" desc="Trails, springs, dive points & access notes." />
         <FeatureCard to="/flora-fauna" image={turtle} icon={<Leaf size={18} />} title="Flora & Fauna" desc="Five ecological zones, from pine line to open sea." />
-        <FeatureCard to="/snorkeling" image={posidonia} icon={<Waves size={18} />} title="Snorkeling" desc="Three coves, mapped with depth & visibility." />
-        <FeatureCard to="/conservation" image={conservationPath} icon={<Shield size={18} />} title="Conservation" desc="Posidonia meadows & how to tread lightly." />
+        <FeatureCard to="/snorkeling" image={posidonia} icon={<Waves size={18} />} title="Snorkeling" desc="A treasure hunt through the water, what to spot in each zone." />
+        <FeatureCard to="/conservation" image={conservationPath} icon={<Shield size={18} />} title="Conservation" desc="What the beach ridge, winter erosion, and carried-in trash can teach us." />
       </section>
     </SiteLayout>
   );
