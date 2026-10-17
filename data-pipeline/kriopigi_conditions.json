@@ -4,46 +4,46 @@
     "latitude": 40.046,
     "longitude": 23.48
   },
-  "generated_at_utc": "2026-10-16T23:37:51.582713+00:00",
+  "generated_at_utc": "2026-10-17T04:29:48.508564+00:00",
   "marine": {
     "marine_model_grid": {
       "latitude": 40.0625,
       "longitude": 23.5
     },
-    "sea_temperature_c": 21.8,
+    "sea_temperature_c": 21.7,
     "current": {
-      "speed_m_s": 0.0807,
-      "speed_cm_s": 8.1,
-      "toward_degrees": 145,
+      "speed_m_s": 0.0485,
+      "speed_cm_s": 4.8,
+      "toward_degrees": 152,
       "toward": "SE",
-      "model_time": "2026-10-16T23:30:00.000000000"
+      "model_time": "2026-10-17T04:15:00.000000000"
     },
     "waves": {
-      "significant_height_m": 0.44,
-      "mean_period_s": 2.1,
-      "from_degrees": 35,
+      "significant_height_m": 0.21,
+      "mean_period_s": 1.9,
+      "from_degrees": 57,
       "from": "NE",
-      "model_time": "2026-10-16T23:00:00.000000000"
+      "model_time": "2026-10-17T04:00:00.000000000"
     },
-    "temperature_model_time": "2026-10-16T23:00:00.000000000"
+    "temperature_model_time": "2026-10-17T04:00:00.000000000"
   },
   "weather": {
     "weather_model_grid": {
       "latitude": 40.0625,
       "longitude": 23.4375
     },
-    "forecast_time_local": "2026-10-17T03:00",
-    "air_temperature_c": 13.4,
-    "apparent_temperature_c": 11.5,
-    "cloud_cover_percent": 100,
+    "forecast_time_local": "2026-10-17T07:00",
+    "air_temperature_c": 13.6,
+    "apparent_temperature_c": 12.6,
+    "cloud_cover_percent": 73,
     "precipitation_mm": 0.0,
     "weather": "Overcast",
-    "atmospheric_visibility_km": 36.8,
+    "atmospheric_visibility_km": 37.3,
     "wind": {
-      "speed_m_s": 3.06,
-      "gust_m_s": 7.3,
-      "from_degrees": 38,
-      "from": "NE"
+      "speed_m_s": 1.1,
+      "gust_m_s": 3.3,
+      "from_degrees": 355,
+      "from": "N"
     }
   },
   "sources": {
